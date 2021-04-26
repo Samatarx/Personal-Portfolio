@@ -1,17 +1,21 @@
 import './App.css';
 import images from './images'
+import { FaBars } from "react-icons/fa";
 
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
+      <header className='icon yellow-bg'>
+        <FaBars  />
+      </header>
      <section>
        <div className="full-image image-1" >
-       <div className="overlay-red"></div>
+       {/* <div className="overlay yellow-bg"></div> */}
        </div>
-       <div className="text effects-1">
+       <div className="text  effects-1">
          <h1>Hi</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores, quasi nostrum delectus et voluptates laboriosam impedit libero quidem quas adipisci consectetur modi placeat nobis iste harum repudiandae deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam cumque officia corporis, aut reiciendis, voluptate consectetur saepe repudiandae, corrupti harum id.</p>
+         <p className='yellow' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores, quasi nostrum delectus et voluptates laboriosam impedit libero quidem quas adipisci consectetur modi placeat nobis iste harum repudiandae deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam cumque officia corporis, aut reiciendis, voluptate consectetur saepe repudiandae, corrupti harum id.</p>
          <button>Contact me</button>
          <h1>About Me</h1>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores, quasi nostrum delectus et voluptates laboriosam impedit libero quidem quas adipisci consectetur modi placeat nobis iste harum repudiandae deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam cumque officia corporis, aut reiciendis, voluptate consectetur saepe repudiandae, corrupti harum id.</p>
@@ -24,8 +28,9 @@ function App() {
      </section>
 
      <section className='card-container'>
-       <div className="cards">
-         <div className="overlay-green"></div>
+       <div className="cards red-bg">
+         <h2>key projects</h2>
+         
        </div>
        <div className="text">
          <h2>Tech Stack</h2>
@@ -47,14 +52,14 @@ function App() {
 
      <section >
        <div className="full-image image-2">
-         
+       {/* <div className="overlay red-bg"></div> */}
        </div>
        <div className="text">
          <h3>Contact me</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores, quasi nostrum delectus et voluptates laboriosam impedit libero quidem quas adipisci consectetur modi placeat nobis iste harum repudiandae deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam cumque officia corporis, aut reiciendis, voluptate consectetur saepe repudiandae, corrupti harum id.</p>
        </div>
      </section>
-    </div>
+    </main>
   );
 }
 
