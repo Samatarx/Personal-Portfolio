@@ -1,110 +1,57 @@
 import { AiOutlineDown, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Particles from "react-particles-js";
+import PDF from "../images/Samatar_Xasan_Resume.pdf";
+import { useState } from "react";
+import { useSpring, animated } from "react-spring";
+import ParticleComp from "./ParticleComp";
 
 function Header({ colour, handleBackClick, pageRefs }) {
-  const particlesBackground = (colour) => {
-    if (colour === "red") {
-      return (
-        <Particles
-          className="particles-full"
-          params={{
-            particles: {
-              number: {
-                value: 15,
-              },
-              size: {
-                value: 3,
-              },
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: "#fc4445",
-                  blur: 5,
-                },
-              },
-              color: {
-                value: "#fc4445",
-              },
-              move: {
-                speed: 0.5,
-              },
-            },
-          }}
-        />
-      );
-    } else if (colour === "yellow") {
-      return (
-        <Particles
-          className="particles-full"
-          params={{
-            particles: {
-              number: {
-                value: 15,
-              },
-              size: {
-                value: 3,
-              },
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: "#fdca7f",
-                  blur: 5,
-                },
-              },
-              color: {
-                value: "#fdca7f",
-              },
-              move: {
-                speed: 0.5,
-              },
-            },
-          }}
-        />
-      );
-    } else if (colour === "green") {
-      return (
-        <Particles
-          className="particles-full"
-          params={{
-            particles: {
-              number: {
-                value: 15,
-              },
-              size: {
-                value: 3,
-              },
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: "#59e759",
-                  blur: 5,
-                },
-              },
-              color: {
-                value: "#59e759",
-              },
-              move: {
-                speed: 0.5,
-              },
-            },
-          }}
-        />
-      );
-    }
-  };
+  const props = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 2000 },
+  });
+  const props2 = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 },
+  });
+
+  const [appear, setAppear] = useState(true);
 
   return (
     <article
       ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
     >
-      <div className={`logo `} style={{ boxShadow: `3px 3px ${colour}` }}>
-        SX
-      </div>
-      <div className="centre">
-        <p>Hi there!</p>
-        <h2>I'm Samatar Xasan</h2>
+      <div className={`logo ${colour}-bg`}>SX</div>
+      <animated.div style={props} className="centre">
+        <p className={`${colour}`}>Hi there!</p>
+        <h1 className="title">I'm Samatar Xasan</h1>
         <p className={`${colour}`}>Front end developer</p>
-        <div className="social-icons-top">
+        <div className="quick-links">
+          <animated.div style={props2} className="quick-page-list">
+            <animated.span style={props2} className="quick-link">
+              <a href={PDF} target="_blank">
+                Resume
+              </a>
+            </animated.span>
+            <span className="quick-link"
+              onClick={() => {
+                handleBackClick("projects");
+              }}
+            >
+              Projects
+              <div className='underline'></div>
+            </span>
+            <span className="quick-link"
+              onClick={() => {
+                handleBackClick("contact");
+              }}
+            >
+              Contact Me
+            </span>
+          </animated.div>
+        </div>
+        <div className="quick-social">
           <a href="https://www.linkedin.com/in/samatarxasan/" target="blank">
             <AiFillLinkedin />
           </a>
@@ -112,7 +59,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
             <AiFillGithub />
           </a>
         </div>
-      </div>
+      </animated.div>
       <div className="down-icon">
         <AiOutlineDown
           onClick={() => {
@@ -120,7 +67,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
           }}
         />
       </div>
-      {particlesBackground(colour)}
+      <ParticleComp colour={colour} />
     </article>
   );
 }
