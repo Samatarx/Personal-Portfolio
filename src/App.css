@@ -370,6 +370,12 @@ section div.image-2 {
   background-image: url("./images/IMG_0290.JPEG");
 }
 
+.sub-heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* .overlay {
   width: 100%;
   height: 100vh;

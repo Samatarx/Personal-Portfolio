@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/About";
 
-
 function App() {
   const [nav, setNav] = useState(true);
   const [colour, setColour] = useState("yellow");
@@ -34,8 +33,11 @@ function App() {
         handleBackClick={handleBackClick}
       />
 
-      <Header colour={colour} handleBackClick={handleBackClick} pageRefs={pageRefs}/>
-
+      <Header
+        colour={colour}
+        handleBackClick={handleBackClick}
+        pageRefs={pageRefs}
+      />
 
       <section
         ref={(el) => (pageRefs.current = { ...pageRefs.current, about: el })}
@@ -43,56 +45,9 @@ function App() {
         <div className="full-image image-1">
           {/* <div className="overlay yellow-bg"></div> */}
         </div>
-       
+
         <div className="text  effects-1">
           <About colour={colour} />
-          {/* <h1>About Me</h1>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <h2>Work History</h2>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p> */}
         </div>
       </section>
 
