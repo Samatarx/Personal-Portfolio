@@ -1,20 +1,8 @@
-import { useState } from "react";
-
 function About({ colour }) {
-  const [about, setAbout] = useState([]);
   return (
     <summary>
-      <h1>About Me</h1>
-      <form className="bio-length-control">
-        <fieldset>
-          <legend>Bio Length:</legend>
-          <div className="bio-options-lengths">
-            <div className="bio-option">
-              <input type="radio" className="bio-input" />
-            </div>
-          </div>
-        </fieldset>
-      </form>
+      <h2>About Me</h2>
+    
       <p className={`${colour}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
         quasi nostrum delectus et voluptates laboriosam impedit libero quidem

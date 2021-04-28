@@ -7,7 +7,7 @@ import About from "./components/About";
 
 function App() {
   const [nav, setNav] = useState(true);
-  const [colour, setColour] = useState("red");
+  const [colour, setColour] = useState("yellow");
 
   const changeNav = (boolean) => {
     setNav(boolean);

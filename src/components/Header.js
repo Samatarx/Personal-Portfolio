@@ -1,62 +1,75 @@
 import { AiOutlineDown, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import PDF from "../images/Samatar_Xasan_Resume.pdf";
-import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ParticleComp from "./ParticleComp";
+import { useState } from "react";
+import useInterval from "react-useinterval";
+
+const titles = ['Developer','Engineer', 'Polymath'];
+
 
 function Header({ colour, handleBackClick, pageRefs }) {
   const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 2000 },
-  });
-  const props2 = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 1000 },
+    from: { opacity: 0, marginTop:'1000px' },
+    to: { opacity: 1, marginTop:'0px' },
+    config: {duration: 1500}
   });
 
-  const [appear, setAppear] = useState(true);
+  const props2 = useSpring({
+    from: { opacity: 0, marginTop:'-1000px' },
+    to: { opacity: 1, marginTop:'0px' },
+    config: {duration: 1500}
+  });
+
+  const [index, setIndex] = useState(0)
+  const item = titles[index]
+  const increment = () => setIndex(state => (state+1)% titles.length)
+  useInterval(increment,3000)
 
   return (
     <article
       ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
     >
-      <div className={`logo ${colour}-bg`}>SX</div>
+      <animated.div style={props2} className={`logo ${colour}`}>SX</animated.div>
       <animated.div style={props} className="centre">
-        <p className={`${colour}`}>Hi there!</p>
-        <h1 className="title">I'm Samatar Xasan</h1>
-        <p className={`${colour}`}>Front end developer</p>
+        <h1 className={`${colour} small-heading`}>
+          Hi there!
+        </h1>
+        <h2 className="title">I'm Samatar Xasan</h2>
+        <p className='strap-line' >A Structural Engineer turned Web Developer</p>
+        <p className={`${colour} title-roll`}>{item}</p>
         <div className="quick-links">
-          <animated.div style={props2} className="quick-page-list">
-            <animated.span style={props2} className="quick-link">
+          <div className="quick-page-list">
+            <span className="quick-link">
               <a href={PDF} target="_blank">
                 Resume
               </a>
-            </animated.span>
-            <span className="quick-link"
+            </span>
+            <span
+              className="quick-link"
               onClick={() => {
                 handleBackClick("projects");
               }}
             >
               Projects
-              <div className='underline'></div>
+              <div className="underline"></div>
             </span>
-            <span className="quick-link"
+            <span
+              className="quick-link"
               onClick={() => {
                 handleBackClick("contact");
               }}
             >
               Contact Me
             </span>
-          </animated.div>
+          </div>
         </div>
         <div className="quick-social">
           <a href="https://www.linkedin.com/in/samatarxasan/" target="blank">
-            <AiFillLinkedin />
+            <AiFillLinkedin className={`${colour}`} />
           </a>
           <a href="https://github.com/samatarx" target="blank">
-            <AiFillGithub />
+            <AiFillGithub className={`${colour}`} />
           </a>
         </div>
       </animated.div>
@@ -67,6 +80,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
           }}
         />
       </div>
+      <p className='about-me' >About me</p>
       <ParticleComp colour={colour} />
     </article>
   );

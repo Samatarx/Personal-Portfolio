@@ -48,7 +48,7 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
+ 
   line-height: 1.25;
   margin-bottom: 0.75rem;
   color: #fff;
@@ -114,7 +114,11 @@ p {
 
 /*  Global Classes */
 
-/* Section */
+/*
+=============== 
+Header
+===============
+*/
 
 .App {
   max-width: 2000px;
@@ -137,8 +141,7 @@ nav {
   text-transform: uppercase;
   padding: 0.2rem 0.4rem;
   transform: skew(5deg, -5deg);
-  box-shadow: -3px -3px #000;
-  color: #efefef;
+  border: 2px solid #fff;
 }
 
 .icon-m {
@@ -148,6 +151,7 @@ nav {
   display: grid;
   place-content: center;
   border: 2px solid var(--main-theme);
+  cursor: pointer;
 }
 
 .menu-wrapper {
@@ -162,6 +166,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-drop {
@@ -173,6 +178,10 @@ nav {
   padding: 0px 30px 10px;
 }
 
+.nav-links {
+  cursor: pointer;
+}
+
 .colours {
   display: flex;
   padding: 0;
@@ -181,6 +190,7 @@ nav {
 
 .themes {
   margin-top: 10px;
+  cursor:default imp !important;
 }
 .yellow-btn,
 .red-btn,
@@ -237,6 +247,20 @@ article {
 
 .title {
   margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.small-heading{
+ font-size: 0.875rem;
+}
+
+.strap-line{
+  width: 100%;
+}
+
+.title-roll {
+  width: 100%;
+text-align: right;
 }
 
 .quick-links {
@@ -285,27 +309,6 @@ article {
   width: 100%;
 }
 
-.underline{
-  border-bottom: 1px solid white ;
-  color: #fff;
-  width: 0%;
-  height: 2px;
-}
-
-@keyframes uline {
- from {
-  width: 0;
- }
- to {
-   width: 100%;
- }
-}
-
-.underline:hover {
-  width: 100%;
-  animation: uline 1s linear;
-}
-
 .down-icon {
   position: absolute;
   padding: 0;
@@ -316,15 +319,18 @@ article {
   cursor: pointer;
 }
 
-.fade-enter{
-  opacity: 0;
-  z-index: 1;
+.about-me {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 2%;
 }
 
-.fade-enter.fade-enter-active{
-  opacity: 1;
-  transition: opacity 5000ms linear;
-}
+/*
+=============== 
+Section
+===============
+*/
 
 section {
   display: flex;

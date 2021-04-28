@@ -1,15 +1,25 @@
-import React from "react";
+import {useEffect} from 'react'
 import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
+import { useSpring, animated } from "react-spring";
 
 const coloursArray = ["red", "yellow", "green"];
 
 function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
-  console.log(colour);
+  const props = useSpring({
+    from: { opacity: 0, marginTop:'-1000px' },
+    to: { opacity: 1, marginTop:'0px' },
+    config: {duration: 1500}
+  });
+
+  useEffect(() => {
+    setInterval(()=>{changeNav(true)},15000)
+  }, [nav])
+ 
   return (
-    <nav className="icon">
+    <animated.nav style={props} className="icon">
       {nav ? (
-        <div className={`icon-m ${colour}-bg`}>
-          <AiOutlineMenu onClick={() => changeNav(false)} />
+        <div onClick={() => changeNav(false)} className={`icon-m ${colour}-bg`}>
+          <AiOutlineMenu  />
         </div>
       ) : (
         <div className="menu-wrapper">
@@ -23,21 +33,21 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
           </div>
           <div className="nav-drop ">
             <ul>
-              <li
+              <li className='nav-links'
                 onClick={() => {
                   handleBackClick("about");
                 }}
               >
                 About
               </li>
-              <li
+              <li className='nav-links'
                 onClick={() => {
                   handleBackClick("projects");
                 }}
               >
                 Projects
               </li>
-              <li
+              <li className='nav-links'
                 onClick={() => {
                   handleBackClick("contact");
                 }}
@@ -61,7 +71,7 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
           </div>
         </div>
       )}
-    </nav>
+    </animated.nav>
   );
 }
 
