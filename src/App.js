@@ -1,7 +1,9 @@
 import "./App.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Nav from "./components/Nav";
-import { AiOutlineDown } from "react-icons/ai";
+import Header from "./components/Header";
+import About from "./components/About";
+
 
 function App() {
   const [nav, setNav] = useState(true);
@@ -19,6 +21,7 @@ function App() {
 
   const handleBackClick = (type) => {
     pageRefs.current[type].scrollIntoView();
+    console.log(pageRefs.current[type].style.width);
   };
 
   return (
@@ -31,69 +34,19 @@ function App() {
         handleBackClick={handleBackClick}
       />
 
-      <article
-        ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
-      >
-        <div className="centre">
-          <h1>Hi</h1>
-          <h2>I'm Samatar Xasan</h2>
-          <h3 className={`${colour}`}>Front end developer</h3>
-        </div>
-        <div className="down-icon">
-          <AiOutlineDown
-            onClick={() => {
-              handleBackClick("about");
-            }}
-          />
-        </div>
-      </article>
+      <Header colour={colour} handleBackClick={handleBackClick} pageRefs={pageRefs}/>
+
+
       <section
         ref={(el) => (pageRefs.current = { ...pageRefs.current, about: el })}
       >
         <div className="full-image image-1">
           {/* <div className="overlay yellow-bg"></div> */}
         </div>
+       
         <div className="text  effects-1">
-          <h1>Hi</h1>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-
-          <button>Contact me</button>
-          <h1>About Me</h1>
+          <About colour={colour} />
+          {/* <h1>About Me</h1>
           <p className={`${colour}`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             dolores, quasi nostrum delectus et voluptates laboriosam impedit
@@ -139,7 +92,7 @@ function App() {
             temporibus est labore veniam cumque officia corporis, aut
             reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
             id.
-          </p>
+          </p> */}
         </div>
       </section>
 

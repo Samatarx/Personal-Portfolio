@@ -3,26 +3,22 @@ import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 
 const coloursArray = ["red", "yellow", "green"];
 
-function Nav({
-  nav,
-  colour,
-  changeNav,
-  redColour,
-  yellowColour,
-  greenColour,
-  changeColour,
-  handleBackClick,
-}) {
+function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
+  console.log(colour);
   return (
     <nav className="icon">
       {nav ? (
-        <div className={`icon ${colour}-bg`}>
+        <div className={`icon-m ${colour}-bg`}>
           <AiOutlineMenu onClick={() => changeNav(false)} />
         </div>
       ) : (
         <div className="menu-wrapper">
           <div className="icon-x">
-            <AiOutlineHome onClick={()=>{handleBackClick('home')}}/>
+            <AiOutlineHome
+              onClick={() => {
+                handleBackClick("home");
+              }}
+            />
             <AiOutlineClose onClick={() => changeNav(true)} />
           </div>
           <div className="nav-drop ">
@@ -34,14 +30,24 @@ function Nav({
               >
                 About
               </li>
-              <li onClick={() => {
+              <li
+                onClick={() => {
                   handleBackClick("projects");
-                }}>Projects</li>
-              <li onClick={() => {
+                }}
+              >
+                Projects
+              </li>
+              <li
+                onClick={() => {
                   handleBackClick("contact");
-                }}>Contact</li>
+                }}
+              >
+                Contact
+              </li>
+              <li className="themes">Themes</li>
             </ul>
           </div>
+
           <div className="colours">
             {coloursArray.map((colour, idx) => {
               return (

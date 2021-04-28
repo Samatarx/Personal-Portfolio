@@ -5,7 +5,7 @@ Variables
 */
 
 :root {
-  --main-theme: #000000;
+  --main-theme: #2a2f3d;
   --yellow-theme: #fdca7f;
   --green-theme: #59e759;
   --red-theme: #fc4445;
@@ -116,19 +116,37 @@ p {
 
 /* Section */
 
+.App {
+  max-width: 2000px;
+  margin: auto;
+}
+
 nav {
   position: fixed;
   top: 2%;
   z-index: 10;
   right: 4%;
+  color: #000;
+  padding: 10px;
 }
 
-.icon {
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  text-transform: uppercase;
+  padding: 0.2rem 0.4rem;
+  transform: skew(-5deg, -5deg);
+  background-color: var(--main-theme);
+}
+
+.icon-m {
   padding: 10px;
   border-radius: 50%;
   color: #000;
   display: grid;
   place-content: center;
+  border: 2px solid var(--main-theme);
 }
 
 .menu-wrapper {
@@ -145,14 +163,13 @@ nav {
   align-items: center;
 }
 
-.nav-drop{
+.nav-drop {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0px 30px 10px;
-
 }
 
 .colours {
@@ -161,11 +178,29 @@ nav {
   justify-content: center;
 }
 
-.yellow-btn, .red-btn, .green-btn {
+.themes {
+  margin-top: 10px;
+}
+.yellow-btn,
+.red-btn,
+.green-btn,
+.about-btn {
   padding: 15px;
   border-radius: 50%;
   margin: 2px;
   cursor: pointer;
+}
+
+.about-btn {
+  background-color: #fc4445;
+}
+
+.about-control {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 article {
@@ -177,6 +212,14 @@ article {
   justify-content: center;
   align-items: center;
   text-align: left;
+}
+
+.particles-full {
+  position: absolute;
+  width: 95vw;
+  height: 100vh;
+  z-index: -5;
+  overflow: hidden;
 }
 
 @keyframes bounce {
@@ -191,17 +234,26 @@ article {
   }
 }
 
+.social-icons-top {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.2rem;
+}
+
+.social-icons-top a {
+  margin: 0.2rem;
+  font-size: 2rem;
+}
+
 .down-icon {
   position: absolute;
   padding: 0;
   margin: 0;
   bottom: 5%;
-  font-size: 100px;
+  font-size: 50px;
   animation: bounce infinite 1s;
+  cursor: pointer;
 }
-
-
-
 
 section {
   display: flex;
