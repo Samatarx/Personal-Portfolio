@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/About";
