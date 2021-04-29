@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/About";
+import TechStack from './components/TechStack'
 
 function App() {
   const [nav, setNav] = useState(true);
@@ -47,7 +48,7 @@ function App() {
         </div>
 
         <div className="text  effects-1">
-          <About colour={colour} />
+          <About colour={colour}/>
         </div>
       </section>
 
@@ -56,82 +57,10 @@ function App() {
         className="card-container"
       >
         <div className={`cards ${colour}-bg`}>
-          <h2>key projects</h2>
+          <h2>Key projects</h2>
         </div>
         <div className="text">
-          <h2>Tech Stack</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
+          <TechStack colour={colour} />
         </div>
       </section>
 
