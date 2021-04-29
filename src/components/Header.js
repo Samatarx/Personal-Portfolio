@@ -41,7 +41,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
         <div className="quick-links">
           <div className="quick-page-list">
             <span className="quick-link">
-              <a href={PDF} target="_blank">
+              <a href={PDF} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </span>
