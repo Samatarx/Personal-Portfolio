@@ -13,7 +13,7 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
 
   useEffect(() => {
     setInterval(()=>{changeNav(true)},15000)
-  }, [nav])
+  }, [nav,changeNav])
  
   return (
     <animated.nav style={props} className="icon">
