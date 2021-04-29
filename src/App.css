@@ -346,7 +346,7 @@ section div {
 }
 
 section div.text {
-  padding: 20px;
+  padding: 0px;
 }
 
 section div.full-image {
@@ -392,3 +392,23 @@ section div.image-2 {
 .overlay-green {
   background-color: var(--green-theme);
 } */
+
+.tech-summary{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: auto;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 50px;
+  column-gap: 5px;
+  row-gap: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
