@@ -4,9 +4,8 @@ function About({ colour }) {
       <h2 className="sub-heading">About Me</h2>
       <p>
         <span className={`${colour}`}>
-          I am London based self-taught software developer
-        </span>
-        looking for my first graduate/junior role. I have specialised thus far
+          I am London based self-taught software developer 
+        </span> looking for my first graduate/junior role. I have specialised thus far
         in <span className={`${colour}`}> front end technologies</span> and I am
         currently learning backend engineering.
       </p>
