@@ -1,8 +1,8 @@
 
 const Cards = () => {
     return (
-        <summary>
-            <h2>Projects</h2>
+        <summary className='cards-summary' >
+            <h2 className='sub-heading-cards' >Projects</h2>
         </summary>
     )
 }
