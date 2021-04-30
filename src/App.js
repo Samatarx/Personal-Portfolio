@@ -3,7 +3,10 @@ import { useState, useRef } from "react";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/About";
-import TechStack from './components/TechStack'
+import TechStack from "./components/TechStack";
+import Cards from "./components/Cards";
+import Carousel from "./components/Carousel";
+import Contact from "./components/Contact";
 
 function App() {
   const [nav, setNav] = useState(true);
@@ -48,7 +51,7 @@ function App() {
         </div>
 
         <div className="text  effects-1">
-          <About colour={colour}/>
+          <About colour={colour} />
         </div>
       </section>
 
@@ -56,8 +59,8 @@ function App() {
         ref={(el) => (pageRefs.current = { ...pageRefs.current, projects: el })}
         className="card-container"
       >
-        <div className={`cards ${colour}-bg`}>
-          <h2>Key projects</h2>
+        <div className="cards">
+          <Cards />
         </div>
         <div className="text">
           <TechStack colour={colour} />
@@ -65,25 +68,8 @@ function App() {
       </section>
 
       <section>
-        <h1>Carousel</h1>
-        <p className={`${colour}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit
-          odio maxime explicabo eaque vitae, maiores repudiandae quaerat libero
-          alias cupiditate, eius, porro dolores est ipsam sint tempore aliquam
-          praesentium harum aperiam repellat eligendi ratione. Inventore
-          doloribus, magnam ducimus iure aspernatur debitis blanditiis
-          voluptatibus consequatur minima sapiente cupiditate doloremque nisi
-          fugiat modi distinctio, atque reiciendis. Animi dolore voluptatum
-          soluta fuga eaque, quae illum nisi doloribus voluptates fugiat
-          perspiciatis accusamus obcaecati qui, provident earum asperiores nobis
-          aut ipsa id ullam iusto sed facere! Cupiditate recusandae numquam,
-          ipsum temporibus velit beatae nemo sed ipsam perspiciatis, aut
-          inventore maiores nulla, expedita consectetur incidunt aspernatur
-          exercitationem consequuntur iure earum accusantium esse dolorum fugit.
-          Repudiandae itaque, excepturi tempora maxime voluptates,
-          necessitatibus, minus eaque voluptatem blanditiis deserunt saepe
-          magnam quibusdam quisquam quis velit id beatae inventore facilis.
-        </p>
+        <Carousel/>
+        
       </section>
 
       <section
@@ -93,16 +79,7 @@ function App() {
           {/* <div className="overlay red-bg"></div> */}
         </div>
         <div className="text">
-          <h3>Contact me</h3>
-          <p className={`${colour}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            dolores, quasi nostrum delectus et voluptates laboriosam impedit
-            libero quidem quas adipisci consectetur modi placeat nobis iste
-            harum repudiandae deserunt sapiente ea nam! Mollitia quaerat
-            temporibus est labore veniam cumque officia corporis, aut
-            reiciendis, voluptate consectetur saepe repudiandae, corrupti harum
-            id.
-          </p>
+          <Contact/>
         </div>
       </section>
     </main>
