@@ -60,7 +60,7 @@ function App() {
         className="card-container"
       >
         <div className="cards">
-          <Cards />
+          <Cards colour={colour} />
         </div>
         <div className="text">
           <TechStack colour={colour} />
