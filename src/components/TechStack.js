@@ -13,18 +13,11 @@ import {
   SiGatsby,
   SiMaterialUi,
   SiJest,
-  SiUnity,
+  SiUnity,SiNextDotJs
 } from "react-icons/si";
 import { FaReact, FaAws } from "react-icons/fa";
 function TechStack({ colour }) {
-  const styles = {
-    myLogoClass: {
-      ":hover": {
-        color: colour,
-      },
-    },
-  };
-
+ 
   return (
     <summary className="tech-summary">
       <h2 className="sub-heading">Tech Stack</h2>
@@ -108,11 +101,15 @@ function TechStack({ colour }) {
           <DiDatabase className={`tech-icon-logo ${colour}`} />
           <p className="tech-icon-name">SQL</p>
         </div>
+        <div className="tech-icon">
+          <SiNextDotJs className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Next JS</p>
+        </div>
       </div>
       <p className="tech-future">
         If I have time in the future I would like to try and build the
         following:
-        <br /><br />A web scrapper with python, AR/VR applications using Unity and
+        <br /><br />A web scrapper with Python, AR/VR applications using Unity and
         Mobile apps with React Native
       </p>
       <div className="tech-icons">
