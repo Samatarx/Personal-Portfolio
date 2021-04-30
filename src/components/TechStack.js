@@ -1,5 +1,5 @@
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
+import { AiFillGithub } from "react-icons/ai";
+import { DiCss3, DiDatabase, DiHtml5 } from "react-icons/di";
 import {
   SiJavascript,
   SiBootstrap,
@@ -9,81 +9,126 @@ import {
   SiNetlify,
   SiDotNet,
   SiPython,
-  SiUnity,
   SiGit,
   SiGatsby,
   SiMaterialUi,
-  SiPostgresql,
+  SiJest,
+  SiUnity,
 } from "react-icons/si";
 import { FaReact, FaAws } from "react-icons/fa";
 function TechStack({ colour }) {
+  const styles = {
+    myLogoClass: {
+      ":hover": {
+        color: colour,
+      },
+    },
+  };
+
   return (
-    <summary className='tech-summary' >
-      <h2>Tech Stack</h2>
-      <p>I have experience with the following technologies:</p>
-      <div className="tech-icons">
-        <AiFillHtml5 />
-        <DiCss3 />
-        <SiJavascript />
-        <FaReact />
-        <SiRedux />
-        <SiBootstrap />
-        <SiMaterialUi />
-        <FaAws />
-        <SiFirebase />
-        <SiNetlify />
-        <SiGit />
-        <AiFillGithub />
+    <summary className="tech-summary">
+      <h2 className="sub-heading">Tech Stack</h2>
+      <p className="tech-exp">
+        I have experience with the following technologies:
+      </p>
+      <div className="tech-icons main-area">
+        <div className="tech-icon">
+          <DiHtml5 className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">HTML5</p>
+        </div>
+        <div className="tech-icon">
+          <DiCss3 className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">CSS3</p>
+        </div>
+        <div className="tech-icon">
+          <SiJavascript className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">JavaScript</p>
+        </div>
+        <div className="tech-icon">
+          <FaReact className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">React</p>
+        </div>
+        <div className="tech-icon">
+          <SiRedux className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Redux</p>
+        </div>
+        <div className="tech-icon">
+          <SiBootstrap className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Bootstrap</p>
+        </div>
+        <div className="tech-icon">
+          <SiMaterialUi className={`tech-icon-logo ${colour}`}/>
+          <p className="tech-icon-name">Material-Ui</p>
+        </div>
+        <div className="tech-icon">
+          <FaAws className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">AWS</p>
+        </div>
+        <div className="tech-icon">
+          <SiFirebase className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Firebase</p>
+        </div>
+        <div className="tech-icon">
+          <SiNetlify className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Netlify</p>
+        </div>
+        <div className="tech-icon">
+          <SiGit className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Git</p>
+        </div>
+        <div className="tech-icon">
+          <AiFillGithub className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Github</p>
+        </div>
       </div>
-      <p>I am Currently learning the following:</p>
-      <div className="tech-icons">
-        <SiGatsby />
-        <SiCsharp />
-        <SiDotNet />
-        <SiPython />
-        <SiUnity />
-        <SiPostgresql />
+      <p className="tech-future">
+        Over the next few weeks and months I plan on learning the following
+        technologies in order to build full stack applications and to gain a better
+        understanding of test driven development (TDD).
+      </p>
+
+      <div className="tech-icons ">
+        <div className="tech-icon">
+          <SiJest className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Jest</p>
+        </div>
+        <div className="tech-icon">
+          <SiGatsby className={`tech-icon-logo ${colour}`}/>
+          <p className="tech-icon-name">Gatsby</p>
+        </div>
+        <div className="tech-icon">
+          <SiCsharp className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">C#</p>
+        </div>
+        <div className="tech-icon">
+          <SiDotNet className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">ASP.NET</p>
+        </div>
+        <div className="tech-icon">
+          <DiDatabase className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">SQL</p>
+        </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
-        quasi nostrum delectus et voluptates laboriosam impedit libero quidem
-        quas adipisci consectetur modi placeat nobis iste harum repudiandae
-        deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam
-        cumque officia corporis, aut reiciendis, voluptate consectetur saepe
-        repudiandae, corrupti harum id.
+      <p className="tech-future">
+        If I have time in the future I would like to try and build the
+        following:
+        <br /><br />A web scrapper with python, AR/VR applications using Unity and
+        Mobile apps with React Native
       </p>
-      <p className={`${colour}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
-        quasi nostrum delectus et voluptates laboriosam impedit libero quidem
-        quas adipisci consectetur modi placeat nobis iste harum repudiandae
-        deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam
-        cumque officia corporis, aut reiciendis, voluptate consectetur saepe
-        repudiandae, corrupti harum id.
-      </p>
-      <p className={`${colour}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
-        quasi nostrum delectus et voluptates laboriosam impedit libero quidem
-        quas adipisci consectetur modi placeat nobis iste harum repudiandae
-        deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam
-        cumque officia corporis, aut reiciendis, voluptate consectetur saepe
-        repudiandae, corrupti harum id.
-      </p>
-      <p className={`${colour}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
-        quasi nostrum delectus et voluptates laboriosam impedit libero quidem
-        quas adipisci consectetur modi placeat nobis iste harum repudiandae
-        deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam
-        cumque officia corporis, aut reiciendis, voluptate consectetur saepe
-        repudiandae, corrupti harum id.
-      </p>
-      <p className={`${colour}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores,
-        quasi nostrum delectus et voluptates laboriosam impedit libero quidem
-        quas adipisci consectetur modi placeat nobis iste harum repudiandae
-        deserunt sapiente ea nam! Mollitia quaerat temporibus est labore veniam
-        cumque officia corporis, aut reiciendis, voluptate consectetur saepe
-        repudiandae, corrupti harum id.
-      </p>
+      <div className="tech-icons">
+        <div className="tech-icon">
+          <SiPython className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Python</p>
+        </div>
+        <div className="tech-icon">
+          <SiUnity className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Unity</p>
+        </div>
+        <div className="tech-icon">
+          <FaReact className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">React Native</p>
+        </div>
+      </div>
     </summary>
   );
 }
