@@ -12,7 +12,10 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
   });
 
   useEffect(() => {
-    setInterval(()=>{changeNav(true)},15000)
+    let interval = setInterval(()=>{changeNav(true)},15000)
+    return () => {
+      clearInterval(interval)
+    }
   }, [nav,changeNav])
  
   return (
