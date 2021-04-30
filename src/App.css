@@ -154,10 +154,21 @@ nav {
   cursor: pointer;
 }
 
+@keyframes clip-path {
+  0% {clip-path:circle(2.2% at 88% 9%);}
+  25% {clip-path:circle(59.7% at 88% 9%);}
+  50% {clip-path:circle(109.6% at 100% 0);}
+  75% {clip-path:circle(131.6% at 100% 0);}
+  100% {clip-path: circle(141.4% at 74% 31%);;}
+}
+
 .menu-wrapper {
   background-color: #fff;
   border-radius: 10px;
   padding-bottom: 10px;
+  animation-name: clip-path ;
+  animation-duration: 1s;
+  animation-timing-function:linear;
 }
 
 .icon-x {
