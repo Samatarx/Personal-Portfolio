@@ -127,7 +127,7 @@ Header
 
 nav {
   position: fixed;
-  top: 2%;
+  top: 1%;
   z-index: 10;
   right: 4%;
   color: #000;
@@ -136,7 +136,7 @@ nav {
 
 .logo {
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 4%;
   text-transform: uppercase;
   padding: 0.2rem 0.4rem;
@@ -473,6 +473,13 @@ section div.image-2 {
   padding: 0.75rem;
   color: #000;
   width: 100%;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cards-summary::-webkit-scrollbar{
+  display: none;
 }
 
 .sub-heading-cards {
@@ -554,6 +561,7 @@ section div.image-2 {
 
   font-size: 0.8rem;
 }
+
 
 @media (max-width: 767px) {
   /* section {
