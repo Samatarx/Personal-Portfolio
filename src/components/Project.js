@@ -5,9 +5,9 @@ import {
   AiOutlineMinus,
   AiOutlinePlus,
 } from "react-icons/ai";
-import imaged from "../images/IMG_0188.JPEG";
+import { FiFigma } from "react-icons/fi";
 
-const Project = ({ name, image, github, url, tech, desc, colour }) => {
+const Project = ({ name, image, github, url, tech, desc, figma, colour }) => {
   const [show, setShow] = useState(false);
 
   const showAndHide = () => {
@@ -47,11 +47,15 @@ const Project = ({ name, image, github, url, tech, desc, colour }) => {
           )}
         </div>
         {show && (
-          <div>
-
+          <div className="card-content">
             {image}
-            <p>{desc}</p>
+            <p className="card-desc">{desc}</p>
             <div className={`card-links ${colour}`}>
+              {figma && (
+                <a href={figma} target="_blank" rel="noreferrer">
+                  <FiFigma />
+                </a>
+              )}
               <a href={url} target="_blank" rel="noreferrer">
                 <AiOutlineLink />
               </a>
