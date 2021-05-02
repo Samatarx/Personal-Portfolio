@@ -1,4 +1,3 @@
-
 import { techNow, techSoon, techFuture } from "./techArrays";
 
 function TechStack({ colour }) {

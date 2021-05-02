@@ -5,20 +5,20 @@ import ParticleComp from "./ParticleComp";
 import { useState } from "react";
 import useInterval from "react-useinterval";
 
-const titles = ['Developer','Engineer', 'Polymath'];
+const titles = ['Developer','Engineer', 'JavaScript', 'React' ,'Polymath'];
 
 
 function Header({ colour, handleBackClick, pageRefs }) {
   const props = useSpring({
     from: { opacity: 0, marginTop:'1000px' },
     to: { opacity: 1, marginTop:'0px' },
-    config: {duration: 1500}
+    config: {duration: 1000}
   });
 
   const props2 = useSpring({
     from: { opacity: 0, marginTop:'-1000px' },
     to: { opacity: 1, marginTop:'0px' },
-    config: {duration: 1500}
+    config: {duration: 1000}
   });
 
   const [index, setIndex] = useState(0)
