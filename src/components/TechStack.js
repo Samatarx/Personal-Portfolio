@@ -3,7 +3,6 @@ import { DiCss3, DiDatabase, DiHtml5 } from "react-icons/di";
 import {
   SiJavascript,
   SiBootstrap,
-  SiRedux,
   SiFirebase,
   SiCsharp,
   SiNetlify,
@@ -16,6 +15,7 @@ import {
   SiUnity,SiNextDotJs
 } from "react-icons/si";
 import { FaReact, FaAws } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
 function TechStack({ colour }) {
  
   return (
@@ -42,8 +42,8 @@ function TechStack({ colour }) {
           <p className="tech-icon-name">React</p>
         </div>
         <div className="tech-icon">
-          <SiRedux className={`tech-icon-logo ${colour}`} />
-          <p className="tech-icon-name">Redux</p>
+          <FiFigma className={`tech-icon-logo ${colour}`} />
+          <p className="tech-icon-name">Figma</p>
         </div>
         <div className="tech-icon">
           <SiBootstrap className={`tech-icon-logo ${colour}`} />

@@ -1,10 +1,15 @@
 import images from "../images.js";
+import imaged from '../images/IMG_0188.JPEG'
+
+const renderImage = (path) => {
+  return <img src={path} alt="fsdffsd" width='100px'/>
+}
 
 const cardData = [
   {
     id: "0",
     name: "Cryptocurrency Dashboard",
-    image: "process.env.PUBLIC_URL + '/IMG_0188.JPEG'",
+    image: renderImage(imaged),
     url: "https://top100cryptocurrencies.netlify.app/",
     github: "https://github.com/Samatarx/Crypto-Dashboard",
     tech: ["HTML", "CSS", "JS", "React", "Netlify", "API"],
@@ -14,7 +19,7 @@ const cardData = [
   {
     id: "1",
     name: "Sneaker Drop",
-    // image: "asd",
+    image: "../images/IMG_0290.JPEG",
     url: "https://www.sneaker-drop.xyz/",
     github: "https://github.com/Samatarx/Sneaker-Launch",
     tech: ["HTML", "CSS", "JS", "React", "AWS", "Bootstrap"],
@@ -37,7 +42,7 @@ const cardData = [
     // image: "",
     url: "null",
     github: "https://github.com/Samatarx/Personal-Portfolio",
-    tech: ["HTML", "CSS", "JS", "React", "Netlify"],
+    tech: ["HTML", "CSS", "JS", "React", "Netlify", "Figma"],
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem vel accusamus labore fugiat alias dignissimos dolor optio debitis dolorem laborum quis repellendus",
   },
