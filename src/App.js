@@ -79,7 +79,7 @@ function App() {
           {/* <div className="overlay red-bg"></div> */}
         </div>
         <div className="text">
-          <Contact/>
+          <Contact colour={colour} />
         </div>
       </section>
     </main>
