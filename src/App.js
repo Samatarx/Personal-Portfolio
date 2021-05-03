@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Cards from "./components/Cards";
-import Carousel from "./components/Carousel";
+import CarouselComp from "./components/CarouselComp";
 import Contact from "./components/Contact";
 
 function App() {
@@ -68,8 +68,7 @@ function App() {
       </section>
 
       <section>
-        <Carousel/>
-        
+        <CarouselComp colour={colour} />
       </section>
 
       <section
