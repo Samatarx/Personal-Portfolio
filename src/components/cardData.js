@@ -1,4 +1,3 @@
-
 import top100 from '../images/top100.PNG'
 import jordans from '../images/jordans.PNG'
 import stripe from '../images/stripe.PNG'
@@ -16,7 +15,7 @@ const cardData = [
     image: renderImage(top100),
     url: "https://top100cryptocurrencies.netlify.app/",
     github: "https://github.com/Samatarx/Crypto-Dashboard",
-    tech: ["HTML", "CSS", "JS", "React", "Netlify", "API"],
+    tech: ["HTML", "CSS", "JS", "React","API", "Netlify" ],
     desc:
       " I created a dashboard which displays the current prices and price changes of the top 100 coins. I found an amazing free API and I leveraged my React.js skills to build an elegant dashboard.",
   },
@@ -26,7 +25,7 @@ const cardData = [
     image:  renderImage(jordans),
     url: "https://www.sneaker-drop.xyz/",
     github: "https://github.com/Samatarx/Sneaker-Launch",
-    tech: ["HTML", "CSS", "JS", "React", "AWS", "Bootstrap"],
+    tech: ["HTML", "CSS", "Bootstrap", "JS", "React", "AWS"],
     desc:
       "I built a sneaker launch website to demonstrate my ability to use React, React-Router and Bootstrap. I have previously used react router in tutorials and I wanted to try it myself and put my own spin on it.",
   },
