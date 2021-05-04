@@ -27,13 +27,6 @@ const carouselData = [
     github: "https://github.com/Samatarx/React-FAQs",
   },
   {
-    id: 4,
-    title: "React Sidebar and Modal",
-    desc: "Sidebar and Modal created with React",
-    site: "https://samatar-sidebar-and-modal.netlify.app/",
-    github: "https://github.com/Samatarx/React-Sidebar-and-Modal",
-  },
-  {
     id: 5,
     title: "Grocery List",
     desc: "To-do style Grocery list using local storage",
