@@ -1,4 +1,5 @@
 import { techNow, techSoon, techFuture } from "./techArrays";
+import { v4 as uuidv4 } from "uuid";
 
 function TechStack({ colour }) {
   return (
@@ -10,7 +11,7 @@ function TechStack({ colour }) {
       <div className="tech-icons main-area">
         {techNow.map((tech) => {
           return (
-            <div className="tech-icon">
+            <div key={uuidv4()} className="tech-icon">
               <tech.icon className={`tech-icon-logo ${colour}`} />
               <p className="tech-icon-name">{tech.name}</p>
             </div>
@@ -26,7 +27,7 @@ function TechStack({ colour }) {
       <div className="tech-icons ">
       {techSoon.map((tech) => {
           return (
-            <div className="tech-icon">
+            <div key={uuidv4()}  className="tech-icon">
               <tech.icon className={`tech-icon-logo ${colour}`} />
               <p className="tech-icon-name">{tech.name}</p>
             </div>
@@ -43,7 +44,7 @@ function TechStack({ colour }) {
       <div className="tech-icons">
       {techFuture.map((tech) => {
           return (
-            <div className="tech-icon">
+            <div key={uuidv4()}  className="tech-icon">
               <tech.icon className={`tech-icon-logo ${colour}`} />
               <p className="tech-icon-name">{tech.name}</p>
             </div>
