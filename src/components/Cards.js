@@ -1,11 +1,11 @@
 import cardData from "./cardData";
 import Project from "./Project";
-import React, { useState } from "react";
+import { useState } from "react";
 
 
 const Cards = ({ colour }) => {
   const [cards, setCards] = useState(cardData);
-
+  
   return (
     <summary className="cards cards-summary">
       <h2 className="sub-heading-cards">Projects</h2>
