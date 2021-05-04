@@ -78,8 +78,9 @@ function App() {
           {/* <div className="overlay red-bg"></div> */}
         </div>
         <div className="text">
-          <Contact colour={colour} />
+          <Contact colour={colour} handleBackClick={handleBackClick}/>
         </div>
+        
       </section>
     </main>
   );

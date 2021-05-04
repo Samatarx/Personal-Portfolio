@@ -394,6 +394,7 @@ section div.full-image {
 
 section div.image-2 {
   background-image: url("./images/IMG_0290.JPEG");
+  height: 100vh;
 }
 
 .about-summary {
@@ -686,11 +687,18 @@ section div.image-2 {
 }
 
 .contact-summary {
+  position: relative;
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
+}
+
+.contact-desc {
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .contact-form {
@@ -698,22 +706,86 @@ section div.image-2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
+
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  resize: none;
 }
-.contact-btn {
+
+.contact-label {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+}
+
+.contact-label:focus {
+  background-color: #fff;
+}
+
+.contact-btn-div {
   text-align: center;
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+.contact-btn {
+  border: none;
+  outline: none;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.quick-social-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 50px;
+}
+
+.quick-social-contact a {
+  font-size: 30px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+ 
+}
+
+.footer p {
+   padding: 0;
+  margin: 0;
+}
+
+.name-span{
+  cursor: pointer;
+}
+
+.resume {
+  margin: 20px 0;
 }
 
 @media (max-width: 767px) {
   .centre {
     padding: 30px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
   }
 
   .swiper-slide {
@@ -785,63 +857,10 @@ textarea {
   .tech-icon-logo {
     font-size: 50px;
   }
+}
 
-  /* .swiper-button-next {
-    right: 0px
+@media (max-width: 500px) {
+  textarea {
+    width: 70vw;
   }
-
-  .swiper-container {
-    width: auto;
-    height: auto;
-    /* padding: 20px; */
-  /* cursor: pointer;
-    align-items: center;
-  } */
-  /*   
-  .swiper-wrapper {
-    margin: 0 55px;
-    width: auto;
-    height: 150px !important;
-    align-items: center;
-  } */
-
-  /* section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-container {
-    flex-direction: row-reverse;
-  }
-
-  section div {
-    width: 100%;
-    position: relative;
-    top: auto;
-  }
-
-  section div.text {
-    padding: 0px;
-  }
-
-  section div.full-image {
-    background-image: url("./images/IMG_0188.JPEG");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 50vh;
-    position: relative;
-    top: auto;
-  }
-
-  section div.image-2 {
-    background-image: url("./images/IMG_0290.JPEG");
-  }
-
-  .cards {
-    background-color: #fff;
-    color: #000;
-    position: relative;
-    top: auto;
-  } */
 }
