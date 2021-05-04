@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
 
-const Project = ({ name, image, github, url, tech, desc, figma, colour }) => {
+const Project = ({ id, name, image, github, url, tech, desc, figma, colour }) => {
   const [show, setShow] = useState(false);
 
   const showAndHide = () => {
@@ -15,11 +15,11 @@ const Project = ({ name, image, github, url, tech, desc, figma, colour }) => {
   };
 
   return (
-    <summary>
+    <summary key={id} >
       <div className="project-card">
         <div className="project-title-wrapper">
           <div className="project-title-left">
-            <p className="project-title">{name} - </p>
+            <p className="project-title">{name}:</p>
             <ul className="project-tech">
               {tech.map((tec, idx) => {
                 return (
