@@ -1,7 +1,7 @@
 import { AiOutlineDown, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import PDF from "../images/Samatar_Xasan_Resume.pdf";
 import { useSpring, animated } from "react-spring";
-// import ParticleComp from "./ParticleComp";
+import ParticleComp from "./ParticleComp";
 import { useState } from "react";
 import useInterval from "react-useinterval"; 
 
@@ -81,7 +81,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
         />
       </div>
       <p className='about-me' >About me</p>
-      {/* <ParticleComp colour={colour} /> */}
+      <ParticleComp colour={colour} />
     </article>
   );
 }

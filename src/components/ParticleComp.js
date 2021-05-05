@@ -16,7 +16,7 @@ function ParticleComp({colour}) {
                   },
                   line_linked: {
                     shadow: {
-                      enable: true,
+                      enable: false,
                       color: "#ffa3a3",
                       blur: 5,
                     },
@@ -25,7 +25,7 @@ function ParticleComp({colour}) {
                     value: "#ffa3a3",
                   },
                   move: {
-                    speed: 0.5,
+                    speed: 0.2,
                   },
                 },
               }}
@@ -45,7 +45,7 @@ function ParticleComp({colour}) {
                   },
                   line_linked: {
                     shadow: {
-                      enable: true,
+                      enable: false,
                       color: "#fdca7f",
                       blur: 5,
                     },
@@ -54,7 +54,7 @@ function ParticleComp({colour}) {
                     value: "#fdca7f",
                   },
                   move: {
-                    speed: 0.5,
+                    speed: 0.2,
                   },
                 },
               }}
@@ -74,7 +74,7 @@ function ParticleComp({colour}) {
                   },
                   line_linked: {
                     shadow: {
-                      enable: true,
+                      enable: false,
                       color: "#59e759",
                       blur: 5,
                     },
@@ -83,7 +83,7 @@ function ParticleComp({colour}) {
                     value: "#59e759",
                   },
                   move: {
-                    speed: 0.5,
+                    speed: 0.2,
                   },
                 },
               }}
