@@ -67,7 +67,7 @@ const Contact = ({ colour, handleBackClick }) => {
       <div className="resume">
         Click here for a copy of my{" "}
         <span className={`${colour} quick-link`}>
-          <a href={PDF} target="_blank" rel="noreferrer">
+          <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
             CV
           </a>
         </span>
@@ -77,13 +77,13 @@ const Contact = ({ colour, handleBackClick }) => {
           Alternatively, you can get in touch with me via Social Media
         </p>
         <div className="quick-social-contact">
-          <a href="https://www.linkedin.com/in/samatarxasan/" target="blank">
+          <a href="https://www.linkedin.com/in/samatarxasan/" target="blank" aria-label="LinkedIn">
             <AiFillLinkedin className={`${colour}`} />
           </a>
-          <a href="https://github.com/samatarx" target="blank">
+          <a href="https://github.com/samatarx" target="blank" aria-label="Github">
             <AiFillGithub className={`${colour}`} />
           </a>
-          <a href="https://twitter.com/samatarcodes" target="blank">
+          <a href="https://twitter.com/samatarcodes" target="blank" aria-label="Twitter">
             <AiOutlineTwitter className={`${colour}`} />
           </a>
         </div>
