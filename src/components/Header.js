@@ -43,10 +43,13 @@ function Header({ colour, handleBackClick, pageRefs }) {
         <p className={`${colour} title-roll`}>{item}</p>
         <div className="quick-links">
           <div className="quick-page-list">
-            <span className="quick-link">
-              <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-                Resume
-              </a>
+          <span
+              className="quick-link"
+              onClick={() => {
+                handleBackClick("about");
+              }}
+            >
+              About
             </span>
             <span
               className="quick-link"
@@ -63,7 +66,12 @@ function Header({ colour, handleBackClick, pageRefs }) {
                 handleBackClick("contact");
               }}
             >
-              Contact Me
+              Contact
+            </span>
+            <span className="quick-link">
+              <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
+                Resume
+              </a>
             </span>
           </div>
         </div>
@@ -83,7 +91,6 @@ function Header({ colour, handleBackClick, pageRefs }) {
           }}
         />
       </div>
-      <p className='about-me' >About me</p>
       <ParticleComp colour={colour} />
     </article>
   );
