@@ -246,7 +246,7 @@ article {
 }
 
 .centre {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 .particles-full {
@@ -275,7 +275,10 @@ article {
 }
 
 .small-heading {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  padding: 0 30px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .strap-line {
@@ -708,12 +711,26 @@ section div.image-2 {
   align-items: center;
 }
 
+form p {
+  margin-bottom: 0.75rem;
+}
+
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  width: 30vw;
   resize: none;
+  padding: 0.5rem;
+}
+
+textarea:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
 }
 
 .contact-label {
@@ -721,22 +738,79 @@ textarea {
   box-shadow: none;
   border: none;
   width: 100%;
+  padding: 0.5rem;
 }
 
 .contact-label:focus {
   background-color: #fff;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
 .contact-btn-div {
-  text-align: center;
+  text-align: left;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .contact-btn {
-  border: none;
+  border: 1px solid var(--main-theme);
   outline: none;
+  width: 75px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-weight: bolder;
 }
+
+
+
+.contact-btn:hover {
+  animation: flicker 1s;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.33));
+}
+
+
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0.5;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff;
+  }
+  16% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0.5;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff;
+  }
+  32% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff;
+  }
+  48% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .contact-socials {
   display: flex;
@@ -762,25 +836,39 @@ textarea {
 .footer {
   position: absolute;
   bottom: 0%;
- 
+}
+
+.contact-footer {
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
 }
 
 .footer p {
-   padding: 0;
+  padding: 0;
   margin: 0;
 }
 
-.name-span{
+.name-span {
   cursor: pointer;
 }
 
 .resume {
-  margin: 20px 0;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-btn {
+  margin-top: 10px;
+  width: 150px;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 767px) {
   .centre {
-    padding: 30px;
+    padding: 0px 30px;
   }
 
   .title {
@@ -856,6 +944,9 @@ textarea {
 
   .tech-icon-logo {
     font-size: 50px;
+  }
+  textarea {
+    width: 70vw;
   }
 }
 

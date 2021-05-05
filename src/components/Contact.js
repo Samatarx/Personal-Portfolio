@@ -2,28 +2,17 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import PDF from "../images/Samatar_Xasan_Resume.pdf";
 
 const Contact = ({ colour, handleBackClick }) => {
-  const labels = document.querySelectorAll(".form-control label");
-
-  labels.forEach((label) => {
-    label.innerHTML = label.innerText
-      .split("")
-      .map(
-        (letter, idx) =>
-          `<span style='transition-delay:${idx * 100}ms'>${letter}</span>`
-      )
-      .join("");
-  });
   return (
     <summary className="contact-summary">
       <h2 className="sub-heading">Get in Touch</h2>
 
       <p className="contact-desc">
-        If you are want to hire me or require help with a project fill in the
-        form below, or ping me an email
+        If you would like to <span className={`${colour}`}>hire me</span> or
+        just want to say Hi, <br></br> fill in the form below.
       </p>
 
       <form name="contact-form" method="POST" data-netlify="true">
-        <input type="hidden" name='form-name' value='contact-form' />
+        <input type="hidden" name="form-name" value="contact-form" />
         <p>
           <label>
             <input
@@ -52,7 +41,6 @@ const Contact = ({ colour, handleBackClick }) => {
               className={`${colour}-bg contact-text`}
               name="message"
               placeholder="Message"
-              minLength="30"
               rows="5"
               spellCheck="false"
             ></textarea>
@@ -60,31 +48,54 @@ const Contact = ({ colour, handleBackClick }) => {
         </p>
         <div className="contact-btn-div">
           <button className={`${colour}-bg contact-btn`} type="submit">
-            Send
+            SEND
           </button>
         </div>
       </form>
 
       <div className="resume">
-        Click here for a copy of my{" "}
-        <span className={`${colour} quick-link`}>
-          <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-            CV
-          </a>
-        </span>
+        Click here for a copy of my CV{" "}
+        <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
+          <button className={`${colour}-bg contact-btn resume-btn`}>
+            Download
+          </button>
+        </a>
       </div>
       <div className="contact-socials">
-        <p className="sad">
-          Alternatively, you can get in touch with me via Social Media
+        <p className="contact-footer">
+          Alternatively, you can get in touch with me via Social Media or ping
+          me an{" "}
+          <span>
+            {" "}
+            <a
+              href="mailto:samatar.xasan@gmail.com"
+              aria-label="Email"
+              className={`${colour} quick-link`}
+            >
+              email
+            </a>
+          </span>
         </p>
         <div className="quick-social-contact">
-          <a href="https://www.linkedin.com/in/samatarxasan/" target="blank" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/samatarxasan/"
+            target="blank"
+            aria-label="LinkedIn"
+          >
             <AiFillLinkedin className={`${colour}`} />
           </a>
-          <a href="https://github.com/samatarx" target="blank" aria-label="Github">
+          <a
+            href="https://github.com/samatarx"
+            target="blank"
+            aria-label="Github"
+          >
             <AiFillGithub className={`${colour}`} />
           </a>
-          <a href="https://twitter.com/samatarcodes" target="blank" aria-label="Twitter">
+          <a
+            href="https://twitter.com/samatarcodes"
+            target="blank"
+            aria-label="Twitter"
+          >
             <AiOutlineTwitter className={`${colour}`} />
           </a>
         </div>

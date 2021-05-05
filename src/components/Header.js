@@ -31,10 +31,13 @@ function Header({ colour, handleBackClick, pageRefs }) {
       ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
     >
       <animated.div style={props2} className={`logo ${colour}`}>SX</animated.div>
-      <animated.div style={props} className="centre">
-        <h1 className={`${colour} small-heading`}>
+      <div className="heading-div">
+      <h1 className={`${colour} small-heading`}>
           Hi there!
         </h1>
+        </div>
+        <animated.div style={props} className="centre">
+        
         <h2 className="title">I'm Samatar Xasan</h2>
         <p className='strap-line' >A Structural Engineer turned Web Developer</p>
         <p className={`${colour} title-roll`}>{item}</p>
