@@ -55,17 +55,17 @@ const CarouselComp = ({ colour }) => {
                   <p className="caro-desc"> {desc}</p>
                   <div className="caro-content-links">
                     {figma && (
-                      <a href={figma} target="_blank" rel="noreferrer">
+                      <a href={figma} target="_blank" rel="noreferrer" aria-label="Figma">
                         <FiFigma className={`${colour}`} />
                       </a>
                     )}
                     {github && (
-                      <a href={github} target="_blank" rel="noreferrer">
+                      <a href={github} target="_blank" rel="noreferrer" aria-label="Github">
                         <AiFillGithub className={`${colour}`} />
                       </a>
                     )}
                     {site && (
-                      <a href={site} target="_blank" rel="noreferrer">
+                      <a href={site} target="_blank" rel="noreferrer" aria-label="Website Link">
                         <AiOutlineLink className={`${colour}`} />
                       </a>
                     )}
