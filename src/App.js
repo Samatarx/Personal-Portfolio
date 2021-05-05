@@ -23,8 +23,7 @@ function App() {
   const pageRefs = useRef({});
 
   const handleBackClick = (type) => {
-    pageRefs.current[type].scrollIntoView();
-    console.log(pageRefs.current[type].style.width);
+    pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
   };
 
   return (
