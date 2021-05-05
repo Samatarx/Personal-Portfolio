@@ -6,6 +6,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import SwiperCore, { Navigation } from "swiper/core";
+import './carousel.css'
 
 SwiperCore.use([Navigation]);
 const CarouselComp = ({ colour }) => {
