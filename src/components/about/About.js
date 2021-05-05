@@ -10,56 +10,60 @@ function About({ colour }) {
         <legend className="thin-para">Length:</legend>
         <div className="radio-field">
           <div className="radio-div">
-            <input
-              className="radio-btn"
-              type="radio"
-              name="shortest"
-              id="shortest"
-              checked={size === 0}
-              onChange={() => {
-                setSize(0);
-              }}
-            />
-            <label for="shortest"></label>
+            <label for="shortest">
+              <input
+                className="radio-btn"
+                type="radio"
+                name="shortest"
+                id="shortest"
+                checked={size === 0}
+                onChange={() => {
+                  setSize(0);
+                }}
+              />
+            </label>
           </div>
           <div className="radio-div">
-            <input
-              className="radio-btn"
-              type="radio"
-              name="short"
-              id="short"
-              checked={size === 1}
-              onChange={() => {
-                setSize(1);
-              }}
-            />
-            <label for="short"></label>
+            <label for="short">
+              <input
+                className="radio-btn"
+                type="radio"
+                name="short"
+                id="short"
+                checked={size === 1}
+                onChange={() => {
+                  setSize(1);
+                }}
+              />
+            </label>
           </div>
           <div className="radio-div">
-            <input
-              className="radio-btn"
-              type="radio"
-              name="medium"
-              id="medium"
-              checked={size === 2}
-              onChange={() => {
-                setSize(2);
-              }}
-            />
-            <label for="medium"></label>
+            <label for="medium">
+              <input
+                className="radio-btn"
+                type="radio"
+                name="medium"
+                id="medium"
+                checked={size === 2}
+                onChange={() => {
+                  setSize(2);
+                }}
+              />
+            </label>
           </div>
           <div className="radio-div">
-            <input
-              className={` ${colour}-radio radio-btn`}
-              type="radio"
-              name="long"
-              id="long"
-              checked={size === 3}
-              onChange={() => {
-                setSize(3);
-              }}
-            />
-            <label for="long"></label>
+            <label for="long">
+              <input
+                className={` ${colour}-radio radio-btn`}
+                type="radio"
+                name="long"
+                id="long"
+                checked={size === 3}
+                onChange={() => {
+                  setSize(3);
+                }}
+              />
+            </label>
           </div>
         </div>
         <div className="labels">
