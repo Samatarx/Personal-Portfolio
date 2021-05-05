@@ -27,6 +27,7 @@ legend {
 }
 .radio-field label {
   width: 0%;
+  display: none;
 }
 
 .fields {
