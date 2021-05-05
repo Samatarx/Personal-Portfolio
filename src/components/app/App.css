@@ -535,7 +535,9 @@ input:focus::placeholder {
     height: 50vw;
   }
 
-  
+  textarea {
+    width: 70vw;
+  }
 
   
 }

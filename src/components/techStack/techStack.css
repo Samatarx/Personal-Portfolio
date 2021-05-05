@@ -43,13 +43,11 @@
     margin: 0;
   }
   
-  @media (max-width: 767px){
+  @media (max-width: 800px){
     .tech-icon-logo {
         font-size: 50px;
       }
-      textarea {
-        width: 70vw;
-      }
+      
   }
 
   @media (min-width:1500px) {
