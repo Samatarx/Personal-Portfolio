@@ -7,7 +7,17 @@ import {
 } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
 
-const Project = ({ id, name, image, github, url, tech, desc, figma, colour }) => {
+const Project = ({
+  id,
+  name,
+  image,
+  github,
+  url,
+  tech,
+  desc,
+  figma,
+  colour,
+}) => {
   const [show, setShow] = useState(false);
 
   const showAndHide = () => {
@@ -15,7 +25,7 @@ const Project = ({ id, name, image, github, url, tech, desc, figma, colour }) =>
   };
 
   return (
-    <summary key={id} >
+    <summary key={id}>
       <div className="project-card">
         <div className="project-title-wrapper">
           <div className="project-title-left">
@@ -52,14 +62,29 @@ const Project = ({ id, name, image, github, url, tech, desc, figma, colour }) =>
             <p className="card-desc">{desc}</p>
             <div className={`card-links ${colour}`}>
               {figma && (
-                <a href={figma} target="_blank" rel="noreferrer" aria-label="Figma">
+                <a
+                  href={figma}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Figma"
+                >
                   <FiFigma />
                 </a>
               )}
-              <a href={url} target="_blank" rel="noreferrer" aria-label="Website link">
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Website link"
+              >
                 <AiOutlineLink />
               </a>
-              <a href={github} target="_blank" rel="noreferrer" aria-label="Github">
+              <a
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
                 <AiFillGithub />
               </a>
             </div>

@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect } from "react";
 import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 import { useSpring, animated } from "react-spring";
 
@@ -6,23 +6,25 @@ const coloursArray = ["red", "yellow", "green"];
 
 function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
   const props = useSpring({
-    from: { opacity: 0, marginTop:'-1000px' },
-    to: { opacity: 1, marginTop:'0px' },
-    config: {duration: 1000}
+    from: { opacity: 0, marginTop: "-1000px" },
+    to: { opacity: 1, marginTop: "0px" },
+    config: { duration: 1000 },
   });
 
   useEffect(() => {
-    let interval = setInterval(()=>{changeNav(true)},15000)
+    let interval = setInterval(() => {
+      changeNav(true);
+    }, 15000);
     return () => {
-      clearInterval(interval)
-    }
-  }, [nav,changeNav])
- 
+      clearInterval(interval);
+    };
+  }, [nav, changeNav]);
+
   return (
     <animated.nav style={props} className="icon">
       {nav ? (
         <div onClick={() => changeNav(false)} className={`icon-m ${colour}-bg`}>
-          <AiOutlineMenu  />
+          <AiOutlineMenu />
         </div>
       ) : (
         <div className="menu-wrapper">
@@ -36,21 +38,24 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
           </div>
           <div className="nav-drop ">
             <ul>
-              <li className='nav-links'
+              <li
+                className="nav-links"
                 onClick={() => {
                   handleBackClick("about");
                 }}
               >
                 About
               </li>
-              <li className='nav-links'
+              <li
+                className="nav-links"
                 onClick={() => {
                   handleBackClick("projects");
                 }}
               >
                 Projects
               </li>
-              <li className='nav-links'
+              <li
+                className="nav-links"
                 onClick={() => {
                   handleBackClick("contact");
                 }}

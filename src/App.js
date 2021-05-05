@@ -45,9 +45,7 @@ function App() {
       <section
         ref={(el) => (pageRefs.current = { ...pageRefs.current, about: el })}
       >
-        <div className="full-image image-1">
-          {/* <div className="overlay yellow-bg"></div> */}
-        </div>
+        <div className="full-image image-1"></div>
 
         <div className="text  effects-1">
           <About colour={colour} />
@@ -73,13 +71,10 @@ function App() {
       <section
         ref={(el) => (pageRefs.current = { ...pageRefs.current, contact: el })}
       >
-        <div className="full-image image-2">
-          {/* <div className="overlay red-bg"></div> */}
-        </div>
+        <div className="full-image image-2"></div>
         <div className="text">
-          <Contact colour={colour} handleBackClick={handleBackClick}/>
+          <Contact colour={colour} handleBackClick={handleBackClick} />
         </div>
-        
       </section>
     </main>
   );
