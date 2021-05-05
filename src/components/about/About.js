@@ -1,7 +1,8 @@
 import { useState } from "react";
+import './about.css'
 
 function About({ colour }) {
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState(1);
   return (
     <summary className="about-summary">
       <h2 className="sub-heading">About Me</h2>
@@ -109,9 +110,10 @@ function About({ colour }) {
             am currently learning backend engineering.
           </p>
           <p>
-            I started learning how to code on the 10<sup>th</sup> of July 2020
-            at the start of the pandemic, initially as a hobby. I've enjoyed it
-            so much that I have decided to pursue a
+          I started<span className={`${colour}`}> learning </span>how to code
+            on the 10<sup>th</sup> of July 2020 at the start of the pandemic,
+            initially as a hobby. I've enjoyed it so much that I have decided to
+            pursue a
             <span className={`${colour}`}> career in web development</span>.
           </p>
         </summary>

@@ -1,0 +1,57 @@
+.about-summary {
+    padding: 1rem 2rem;
+  }
+
+  legend {
+    width: 100%;
+  }
+  
+  .radio-div {
+    width: auto;
+  }
+  
+  
+  .thin-para {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .radio-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 5px;
+  }
+  .radio-field label {
+    width: 0%;
+  }
+  
+  .fields {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width:500x) {
+    .about-summary {
+        padding: 1rem;
+      }
+  }
+
+  @media (min-width:1200px) {
+    .about-summary {
+        padding: 2rem 4rem;
+      }
+  }
