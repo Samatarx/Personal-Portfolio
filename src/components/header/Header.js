@@ -4,6 +4,7 @@ import { useSpring, animated } from "react-spring";
 import ParticleComp from "./ParticleComp";
 import { useState } from "react";
 import useInterval from "react-useinterval"; 
+import './header.css'
 
 const titles = ['Developer','Engineer', 'JavaScript', 'React' ,'Polymath'];
 

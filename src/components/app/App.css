@@ -138,15 +138,7 @@ nav {
   padding: 10px;
 }
 
-.logo {
-  position: absolute;
-  top: 3%;
-  left: 4%;
-  text-transform: uppercase;
-  padding: 0.2rem 0.4rem;
-  transform: skew(5deg, -5deg);
-  border: 2px solid #fff;
-}
+
 
 .icon-m {
   padding: 10px;
@@ -273,10 +265,7 @@ article {
   }
 }
 
-.title {
-  margin: 2rem 0;
-  font-size: 3rem;
-}
+
 
 .small-heading {
   font-size: 1rem;
@@ -285,70 +274,6 @@ article {
   text-align: left;
 }
 
-.strap-line {
-  width: 100%;
-}
-
-.title-roll {
-  width: 100%;
-  text-align: right;
-}
-
-.quick-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem 0;
-}
-
-.quick-link {
-  cursor: pointer;
-  position: relative;
-}
-
-.quick-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.quick-link:hover::before {
-  visibility: visible;
-  width: 100%;
-}
-
-.quick-social {
-  display: flex;
-  justify-content: flex-end;
-  margin: 1rem 0;
-}
-
-.quick-social a {
-  margin: 0.2rem;
-  font-size: 1.5rem;
-}
-
-.quick-page-list {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.down-icon {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  bottom: 5%;
-  font-size: 50px;
-  animation: bounce infinite 1s;
-  cursor: pointer;
-}
 
 
 
