@@ -106,7 +106,7 @@ const techFuture = [
     icon: SiUnity,
   },
   {
-    name: "React",
+    name: "React Native",
     icon: FaReact,
   },
 ];

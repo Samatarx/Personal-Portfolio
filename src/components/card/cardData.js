@@ -11,7 +11,7 @@ const renderImage = (path) => {
 const cardData = [
   {
     id: "0",
-    name: "Cryptocurrency Dashboard",
+    name: "Top 100 Crypto",
     image: renderImage(top100),
     url: "https://top100cryptocurrencies.netlify.app/",
     github: "https://github.com/Samatarx/Crypto-Dashboard",

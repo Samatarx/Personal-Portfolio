@@ -213,50 +213,6 @@ section div.image-2 {
 }
 
 
-.tech-summary {
-  padding: 0.75rem;
-}
-
-.tech-icons {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  font-size: 50px;
-  column-gap: 5px;
-  row-gap: 15px;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-}
-
-.main-area {
-  grid-template-columns: auto auto auto auto;
-}
-
-.tech-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: xx-large;
-}
-
-.tech-icon-logo {
-  font-size: 75px;
-}
-
-.tech-icon-name {
-  font-size: 1rem;
-  padding-top: 0.5rem;
-  text-align: center;
-}
-
-.tech-future,
-.tech-exp {
-  text-align: justify;
-  padding: 2rem 0;
-  margin: 0;
-}
-
 
 
 
@@ -551,6 +507,7 @@ input:focus::placeholder {
     padding: 0px 30px;
   }
 
+
   .swiper-slide {
     width: 200px !important;
   }
@@ -580,12 +537,7 @@ input:focus::placeholder {
 
   
 
-  .tech-icon-logo {
-    font-size: 50px;
-  }
-  textarea {
-    width: 70vw;
-  }
+  
 }
 
 @media (max-width: 500px) {

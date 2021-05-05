@@ -125,9 +125,7 @@
         top: auto;
         height: auto;
       }
-      .project-title-left {
-        flex-direction: column;
-      }
+     
     
       .card-content {
         display: flex;
@@ -153,4 +151,10 @@
       .card-links a {
         font-size: 2.5rem;
       }
+  }
+
+  @media (max-width: 830px) {
+    .project-title-left {
+      flex-direction: column;
+    }
   }

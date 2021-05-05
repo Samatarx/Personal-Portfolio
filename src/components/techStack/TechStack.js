@@ -1,5 +1,6 @@
 import { techNow, techSoon, techFuture } from "./techArrays";
 import { v4 as uuidv4 } from "uuid";
+import './techStack.css'
 
 function TechStack({ colour }) {
   return (
