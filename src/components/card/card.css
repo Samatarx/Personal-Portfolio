@@ -7,6 +7,10 @@
   color: #000;
 }
 
+.card-container {
+  flex-direction: row-reverse;
+}
+
 .cards-summary {
   padding: 0.75rem;
   color: #000;

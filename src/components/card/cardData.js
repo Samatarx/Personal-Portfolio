@@ -1,12 +1,12 @@
-import top100 from '../../images/top100.PNG'
-import jordans from '../../images/jordans.PNG'
-import stripe from '../../images/stripe.PNG'
-import personal from '../../images/personal.PNG'
-import movie from '../../images/movie.PNG'
+import top100 from "../../images/top100.PNG";
+import jordans from "../../images/jordans.PNG";
+import stripe from "../../images/stripe.PNG";
+import personal from "../../images/personal.PNG";
+import movie from "../../images/movie.PNG";
 
 const renderImage = (path) => {
-  return <img src={path} alt="fsdffsd" className='card-image' />
-}
+  return <img src={path} alt="fsdffsd" className="card-image" />;
+};
 
 const cardData = [
   {
@@ -15,14 +15,14 @@ const cardData = [
     image: renderImage(top100),
     url: "https://top100cryptocurrencies.netlify.app/",
     github: "https://github.com/Samatarx/Crypto-Dashboard",
-    tech: ["HTML", "CSS", "JS", "React","API", "Netlify" ],
+    tech: ["HTML", "CSS", "JS", "React", "API", "Netlify"],
     desc:
       " I created a dashboard which displays the current prices and price changes of the top 100 coins. I found an amazing free API and I leveraged my React.js skills to build an elegant dashboard.",
   },
   {
     id: "1",
     name: "Sneaker Drop",
-    image:  renderImage(jordans),
+    image: renderImage(jordans),
     url: "https://www.sneaker-drop.xyz/",
     github: "https://github.com/Samatarx/Sneaker-Launch",
     tech: ["HTML", "CSS", "Bootstrap", "JS", "React", "AWS"],
@@ -32,7 +32,7 @@ const cardData = [
   {
     id: "2",
     name: "Stripe Clone",
-    image:  renderImage(stripe),
+    image: renderImage(stripe),
     url: "https://samatars-react-stripe-clone.netlify.app",
     github: "https://github.com/Samatarx/Stripe-Clone",
     tech: ["HTML", "CSS", "JS", "React", "Netlify"],
@@ -46,7 +46,8 @@ const cardData = [
     url: "null",
     github: "https://github.com/Samatarx/Personal-Portfolio",
     tech: ["HTML", "CSS", "JS", "React", "Netlify", "Figma"],
-    figma:'https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1',
+    figma:
+      "https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1",
     desc:
       "Made my personal portfolio using React and leveraged the use of external animation libraries like React Spring. Furthermore, I used useRef to create a seemless navigation between different components",
   },

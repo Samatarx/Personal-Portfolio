@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { AiOutlineClose, AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 import { useSpring, animated } from "react-spring";
-import './nav.css'
+import "./nav.css";
 
 const coloursArray = ["red", "yellow", "green"];
 

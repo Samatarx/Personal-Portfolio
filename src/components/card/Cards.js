@@ -2,7 +2,7 @@ import cardData from "./cardData";
 import Project from "./Project";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import './card.css'
+import "./card.css";
 
 const Cards = ({ colour }) => {
   const [cards] = useState(cardData);

@@ -1,8 +1,4 @@
-/*
-=============== 
-Variables
-===============
-*/
+/*Variables*/
 
 :root {
   --main-theme: #2a2f3d;
@@ -15,11 +11,7 @@ Variables
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-/*
-=============== 
-Global Styles
-===============
-*/
+/*Global Styles*/
 
 *,
 ::after,
@@ -75,9 +67,6 @@ p {
 .yellow-bg {
   background-color: var(--yellow-theme);
 }
-input[type="radio"]:checked {
-  background-color: var(--yellow-theme);
-}
 
 .green {
   color: var(--green-theme);
@@ -118,52 +107,14 @@ input[type="radio"]:checked {
 
 /*  Global Classes */
 
-/*
-=============== 
-Header
-===============
-*/
-
 .App {
   max-width: 2000px;
   margin: auto;
 }
 
-article {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-
-.centre {
-  padding-top: 0px;
-}
-
-.small-heading {
-  font-size: 1rem;
-  padding: 0 30px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-/*
-=============== 
-Section
-===============
-*/
-
 section {
   display: flex;
   flex-direction: row;
-}
-
-.card-container {
-  flex-direction: row-reverse;
 }
 
 section div {
@@ -195,180 +146,7 @@ section div.image-2 {
   margin-bottom: 20px;
 }
 
-.contact-summary {
-  position: relative;
-  padding: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.contact-desc {
-  text-align: center;
-  padding: 1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-form p {
-  margin-bottom: 0.75rem;
-}
-
-textarea {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 30vw;
-  resize: none;
-  padding: 0.5rem;
-}
-
-textarea:focus {
-  background-color: #fff;
-  outline: none;
-}
-
-textarea:focus::placeholder {
-  color: transparent;
-}
-
-.contact-label {
-  outline: none;
-  box-shadow: none;
-  border: none;
-  width: 100%;
-  padding: 0.5rem;
-}
-
-.contact-label:focus {
-  background-color: #fff;
-}
-
-input:focus::placeholder {
-  color: transparent;
-}
-
-.contact-btn-div {
-  text-align: left;
-  width: 100%;
-  margin-bottom: 4rem;
-}
-
-.contact-btn {
-  border: 1px solid var(--main-theme);
-  outline: none;
-  width: 75px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.5s ease;
-  font-weight: bolder;
-}
-
-.contact-btn:hover {
-  animation: flicker 1s;
-  animation-fill-mode: forwards;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.33));
-}
-
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  8% {
-    opacity: 0.5;
-    background-color: transparent;
-    color: white;
-    border: 2px solid #fff;
-  }
-  16% {
-    opacity: 1;
-  }
-  24% {
-    opacity: 0.5;
-    background-color: transparent;
-    color: white;
-    border: 2px solid #fff;
-  }
-  32% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.5;
-    background-color: transparent;
-    color: white;
-    border: 2px solid #fff;
-  }
-  48% {
-    opacity: 1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.contact-socials {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.quick-social-contact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 1rem;
-  margin-bottom: 50px;
-}
-
-.quick-social-contact a {
-  font-size: 30px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0%;
-}
-
-.contact-footer {
-  padding: 0 1rem 1rem 1rem;
-  text-align: center;
-}
-
-.footer p {
-  padding: 0;
-  margin: 0;
-}
-
-.name-span {
-  cursor: pointer;
-}
-
-.resume {
-  padding: 0 1rem 1rem 1rem;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.resume-btn {
-  margin-top: 10px;
-  width: 150px;
-  border: 1px solid #fff;
-}
-
 @media (max-width: 767px) {
- 
   section {
     flex-direction: column;
     width: 100%;
@@ -390,15 +168,5 @@ input:focus::placeholder {
 
   section div.image-2 {
     height: 50vw;
-  }
-
-  textarea {
-    width: 70vw;
-  }
-}
-
-@media (max-width: 500px) {
-  textarea {
-    width: 70vw;
   }
 }

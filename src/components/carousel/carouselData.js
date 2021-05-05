@@ -132,7 +132,7 @@ const carouselData = [
     title: "First Website",
     desc: "First full site made using HTML and CSS",
     site: "https://codepen.io/samatarx/full/eYJapPW",
-  }
+  },
 ];
 
 export default carouselData;

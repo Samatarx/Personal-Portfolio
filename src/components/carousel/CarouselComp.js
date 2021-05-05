@@ -6,7 +6,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import SwiperCore, { Navigation } from "swiper/core";
-import './carousel.css'
+import "./carousel.css";
 
 SwiperCore.use([Navigation]);
 const CarouselComp = ({ colour }) => {
@@ -33,16 +33,17 @@ const CarouselComp = ({ colour }) => {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView:4 ,
+            slidesPerView: 4,
             spaceBetween: 50,
           },
           1024: {
             slidesPerView: 5,
             spaceBetween: 50,
-          },1500: {
+          },
+          1500: {
             slidesPerView: 7,
             spaceBetween: 50,
-          }
+          },
         }}
         className="mySwiper"
       >
@@ -56,17 +57,32 @@ const CarouselComp = ({ colour }) => {
                   <p className="caro-desc"> {desc}</p>
                   <div className="caro-content-links">
                     {figma && (
-                      <a href={figma} target="_blank" rel="noreferrer" aria-label="Figma">
+                      <a
+                        href={figma}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Figma"
+                      >
                         <FiFigma className={`${colour}`} />
                       </a>
                     )}
                     {github && (
-                      <a href={github} target="_blank" rel="noreferrer" aria-label="Github">
+                      <a
+                        href={github}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Github"
+                      >
                         <AiFillGithub className={`${colour}`} />
                       </a>
                     )}
                     {site && (
-                      <a href={site} target="_blank" rel="noreferrer" aria-label="Website Link">
+                      <a
+                        href={site}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Website Link"
+                      >
                         <AiOutlineLink className={`${colour}`} />
                       </a>
                     )}

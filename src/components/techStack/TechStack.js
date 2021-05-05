@@ -1,6 +1,6 @@
 import { techNow, techSoon, techFuture } from "./techArrays";
 import { v4 as uuidv4 } from "uuid";
-import './techStack.css'
+import "./techStack.css";
 
 function TechStack({ colour }) {
   return (
@@ -26,9 +26,9 @@ function TechStack({ colour }) {
       </p>
 
       <div className="tech-icons ">
-      {techSoon.map((tech) => {
+        {techSoon.map((tech) => {
           return (
-            <div key={uuidv4()}  className="tech-icon">
+            <div key={uuidv4()} className="tech-icon">
               <tech.icon className={`tech-icon-logo ${colour}`} />
               <p className="tech-icon-name">{tech.name}</p>
             </div>
@@ -43,9 +43,9 @@ function TechStack({ colour }) {
         Mobile apps with React Native
       </p>
       <div className="tech-icons">
-      {techFuture.map((tech) => {
+        {techFuture.map((tech) => {
           return (
-            <div key={uuidv4()}  className="tech-icon">
+            <div key={uuidv4()} className="tech-icon">
               <tech.icon className={`tech-icon-logo ${colour}`} />
               <p className="tech-icon-name">{tech.name}</p>
             </div>
