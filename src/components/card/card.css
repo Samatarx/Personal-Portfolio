@@ -91,7 +91,7 @@
 
 .card-image {
   width: 200px;
-  height: 400px;
+  height: 300px;
   border: 1px solid #fff;
   margin: 5px 10px;
 }
@@ -139,6 +139,7 @@
 
   .card-image {
     width: 70vw;
+    height: auto;
   }
 
   .card-links {
