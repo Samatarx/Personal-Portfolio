@@ -659,7 +659,7 @@ section div.image-2 {
 
 .swiper-slide {
   text-align: center;
-  height: auto;
+  height: 150px !important;
   cursor: pointer;
   background: var(--main-theme);
   border-radius: 10px;
