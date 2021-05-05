@@ -423,7 +423,7 @@ section div.text {
 }
 
 section div.full-image {
-  background-image: url("./images/IMG_0188.jpg");
+  background-image: url("../../images/IMG_0188.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -442,7 +442,7 @@ section div.full-image {
 }
 
 section div.image-2 {
-  background-image: url("./images/IMG_0290.jpg");
+  background-image: url("../../images/IMG_0290.jpg");
   height: 100vh;
 }
 

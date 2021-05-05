@@ -1,5 +1,5 @@
 import { AiOutlineDown, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import PDF from "../images/Samatar_Xasan_Resume.pdf";
+import PDF from "../../images/Samatar_Xasan_Resume.pdf";
 import { useSpring, animated } from "react-spring";
 import ParticleComp from "./ParticleComp";
 import { useState } from "react";

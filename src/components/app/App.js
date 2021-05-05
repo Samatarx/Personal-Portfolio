@@ -1,12 +1,12 @@
 import "./App.css";
 import { useState, useRef } from "react";
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import About from "./components/About";
-import TechStack from "./components/TechStack";
-import Cards from "./components/Cards";
-import CarouselComp from "./components/CarouselComp";
-import Contact from "./components/Contact";
+import Nav from "../nav/Nav";
+import Header from "../header/Header";
+import About from "../about/About";
+import TechStack from "../techStack/TechStack";
+import Cards from "../card/Cards";
+import CarouselComp from "../carousel/CarouselComp";
+import Contact from "../contact/Contact";
 
 function App() {
   const [nav, setNav] = useState(true);

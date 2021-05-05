@@ -1,8 +1,8 @@
-import top100 from '../images/top100.PNG'
-import jordans from '../images/jordans.PNG'
-import stripe from '../images/stripe.PNG'
-import personal from '../images/personal.PNG'
-import movie from '../images/movie.PNG'
+import top100 from '../../images/top100.PNG'
+import jordans from '../../images/jordans.PNG'
+import stripe from '../../images/stripe.PNG'
+import personal from '../../images/personal.PNG'
+import movie from '../../images/movie.PNG'
 
 const renderImage = (path) => {
   return <img src={path} alt="fsdffsd" className='card-image' />

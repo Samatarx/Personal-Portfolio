@@ -1,5 +1,5 @@
 import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
-import PDF from "../images/Samatar_Xasan_Resume.pdf";
+import PDF from "../../images/Samatar_Xasan_Resume.pdf";
 
 const Contact = ({ colour, handleBackClick }) => {
   return (
