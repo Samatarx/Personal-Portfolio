@@ -20,7 +20,7 @@ function About({ colour }) {
                 setSize(0);
               }}
             />
-            <label for="shortest">...</label>
+            <label for="shortest">.</label>
           </div>
           <div className="radio-div">
             <input
@@ -33,7 +33,7 @@ function About({ colour }) {
                 setSize(1);
               }}
             />
-            <label for="short">...</label>
+            <label for="short">.</label>
           </div>
           <div className="radio-div">
             <input
@@ -46,7 +46,7 @@ function About({ colour }) {
                 setSize(2);
               }}
             />
-            <label for="medium">...</label>
+            <label for="medium">.</label>
           </div>
           <div className="radio-div">
             <input
@@ -59,7 +59,7 @@ function About({ colour }) {
                 setSize(3);
               }}
             />
-            <label for="long">...</label>
+            <label for="long">.</label>
           </div>
         </div>
         <div className="labels">
