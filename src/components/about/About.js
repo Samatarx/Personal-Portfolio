@@ -10,7 +10,7 @@ function About({ colour }) {
         <legend className="thin-para">Length:</legend>
         <div className="radio-field">
           <div className="radio-div">
-            <input
+             <label htmlFor="shortest"><input
               className="radio-btn"
               type="radio"
               name="shortest"
@@ -20,10 +20,10 @@ function About({ colour }) {
                 setSize(0);
               }}
             />
-            <label htmlFor="shortest"></label>
+           </label>
           </div>
           <div className="radio-div">
-            <input
+            <label htmlFor="short"><input
               className="radio-btn"
               type="radio"
               name="short"
@@ -33,10 +33,10 @@ function About({ colour }) {
                 setSize(1);
               }}
             />
-            <label htmlFor="short"></label>
+            </label>
           </div>
           <div className="radio-div">
-            <input
+            <label htmlFor="medium"><input
               className="radio-btn"
               type="radio"
               name="medium"
@@ -46,10 +46,10 @@ function About({ colour }) {
                 setSize(2);
               }}
             />
-            <label htmlFor="medium"></label>
+            </label>
           </div>
           <div className="radio-div">
-            <input
+           <label htmlFor="long"> <input
               className={` ${colour}-radio radio-btn`}
               type="radio"
               name="long"
@@ -59,7 +59,7 @@ function About({ colour }) {
                 setSize(3);
               }}
             />
-            <label htmlFor="long"></label>
+            </label>
           </div>
         </div>
         <div className="labels">
