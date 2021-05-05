@@ -81,7 +81,7 @@ function Header({ colour, handleBackClick, pageRefs }) {
         />
       </div>
       <p className='about-me' >About me</p>
-      <ParticleComp colour={colour} />
+      {/* <ParticleComp colour={colour} /> */}
     </article>
   );
 }
