@@ -10,8 +10,8 @@ const titles = ['Developer','Engineer', 'JavaScript', 'React' ,'Polymath'];
 
 function Header({ colour, handleBackClick, pageRefs }) {
   const props = useSpring({
-    from: { opacity: 0, marginTop:'1000px' },
-    to: { opacity: 1, marginTop:'0px' },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
     config: {duration: 500}
   });
 
