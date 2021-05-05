@@ -23,6 +23,7 @@ const Contact = ({ colour, handleBackClick }) => {
       </p>
 
       <form name="contact-form" method="POST" data-netlify="true">
+        <input type="hidden" name='form-name' value='contact-form' />
         <p>
           <label>
             <input
