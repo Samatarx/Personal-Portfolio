@@ -8,7 +8,7 @@ function Nav({ nav, colour, changeNav, changeColour, handleBackClick }) {
   const props = useSpring({
     from: { opacity: 0, marginTop:'-1000px' },
     to: { opacity: 1, marginTop:'0px' },
-    config: {duration: 500}
+    config: {duration: 1000}
   });
 
   useEffect(() => {
