@@ -75,6 +75,10 @@ p {
 .yellow-bg {
   background-color: var(--yellow-theme);
 }
+input[type=radio]:checked{
+  background-color:   var(--yellow-theme);
+} 
+
 .green {
   color: var(--green-theme);
 }
@@ -346,11 +350,53 @@ article {
   cursor: pointer;
 }
 
-.about-me {
+legend {
+  width: 100%;
+}
+
+.radio-div {
+  width: auto;
+}
+
+/* .radio-div input {
   position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+.thin-para {
   padding: 0;
   margin: 0;
-  bottom: 2%;
+}
+
+.radio-field{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.radio-field label {
+  width: 0%;
+}
+
+.fields {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /*
@@ -701,7 +747,7 @@ section div.image-2 {
 
 .contact-desc {
   text-align: center;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .contact-form {
