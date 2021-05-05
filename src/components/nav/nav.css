@@ -1,0 +1,99 @@
+nav {
+    position: fixed;
+    top: 1%;
+    z-index: 10;
+    right: 4%;
+    color: #000;
+    padding: 10px;
+  }
+  
+.icon-m {
+    padding: 10px;
+    border-radius: 50%;
+    color: #000;
+    display: grid;
+    place-content: center;
+    border: 2px solid var(--main-theme);
+    cursor: pointer;
+  }
+  
+  @keyframes clip-path {
+    0% {
+      clip-path: circle(2.2% at 88% 9%);
+    }
+    25% {
+      clip-path: circle(59.7% at 88% 9%);
+    }
+    50% {
+      clip-path: circle(109.6% at 100% 0);
+    }
+    75% {
+      clip-path: circle(131.6% at 100% 0);
+    }
+    100% {
+      clip-path: circle(141.4% at 74% 31%);
+    }
+  }
+  
+  .menu-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    animation: clip-path 1s linear;
+    border: 0.2px solid var(--main-theme);
+  }
+  
+  .icon-x {
+    padding: 9px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px 10px;
+  }
+  
+  .nav-links {
+    cursor: pointer;
+  }
+  
+  .colours {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .themes {
+    margin-top: 10px;
+    cursor: default imp !important;
+  }
+  .yellow-btn,
+  .red-btn,
+  .green-btn,
+  .about-btn {
+    padding: 15px;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  .about-btn {
+    background-color: #fc4445;
+  }
+  
+  .about-control {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
