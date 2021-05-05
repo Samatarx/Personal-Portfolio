@@ -59,7 +59,7 @@ function About({ colour }) {
                 setSize(3);
               }}
             />
-            <label for="long"></label>
+            <label for="long">...</label>
           </div>
         </div>
         <div className="labels">
