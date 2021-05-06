@@ -12,48 +12,49 @@ const Contact = ({ colour, handleBackClick }) => {
         just want to say Hi, <br></br> fill in the form below.
       </p>
 
-      <form name="contact-form" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact-form" />
-        <p>
-          <label>
-            <input
-              className={`${colour}-bg contact-label `}
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            <input
-              className={`${colour}-bg contact-label`}
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            <textarea
-              className={`${colour}-bg contact-text`}
-              name="message"
-              placeholder="Message"
-              rows="5"
-              spellCheck="false"
-            ></textarea>
-          </label>
-        </p>
-        <div className="contact-btn-div">
-          <button className={`${colour}-bg contact-btn`} type="submit">
-            SEND
-          </button>
-        </div>
-      </form>
-
+      <div className="contact-form">
+        <form name="contact-form" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact-form" />
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label `}
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label`}
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <textarea
+                className={`${colour}-bg contact-text`}
+                name="message"
+                placeholder="Message"
+                rows="5"
+                spellCheck="false"
+              ></textarea>
+            </label>
+          </p>
+          <div className="contact-btn-div">
+            <button className={`${colour}-bg contact-btn`} type="submit">
+              SEND
+            </button>
+          </div>
+        </form>
+      </div>
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
