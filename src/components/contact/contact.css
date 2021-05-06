@@ -150,6 +150,7 @@ input:focus::placeholder {
 .footer p {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .name-span {
@@ -176,5 +177,6 @@ input:focus::placeholder {
   }
   textarea {
     width: 70vw;
+    min-width: 265px;
   }
 }
