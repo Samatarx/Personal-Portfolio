@@ -2,21 +2,21 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/samatarx/Sneaker-Launch">
-    <img src='./public/images/IMG_0290.jpg' width='250px' >
+  <a href="https://github.com/samatarx/Personal-Portfolio">
+    <img src='./public/IMG_0290.jpg' width='250px' >
   </a>
 
   <h3 align="center">Personal Portfolio</h3>
 
   <p align="center">
-    A site which demonstrates my skills and showcases my projects
+    A site which demonstrates my software development skills and showcases my projects
     <br />
     <br />
     <a href="https://top100cryptocurrencies.netlify.app/" target='#'>View Demo</a>
     ·
-    <a href="https://github.com/samatarx/Sneaker-Launch/issues">Report Bug</a>
+    <a href="https://github.com/Samatarx/Personal-Portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/samatarx/Sneaker-Launch/issues">Request Feature</a>
+    <a href="https://github.com/Samatarx/Personal-Portfolio/issues">Request Feature</a>
   </p>
 </p>
 
@@ -38,9 +38,9 @@
 
 ## About The Project
 
-I created a my portfolio to demonstrate my ability to create stunning sites and to also showcase my previous work. Before starting the site I created a simple wireframe so that I could have something to work towards. 
+I created a my portfolio to demonstrate my ability to create stunning sites and to also showcase my previous work. Before starting the site I created a simple wireframe so that I could put my designing skills to the test.
 
-I learnt how to use several new animation libraries to bring my vision to life. Implemented a Netlify form for the first time, was able to make the site accessible and responsive to all screen sizes.
+I learnt how to use several new animation libraries to bring my vision to life. Furthermore, I implemented a Netlify form for the first time, was able to make the site accessible and responsive to all screen sizes.
 
 ### Built With
 
@@ -57,7 +57,7 @@ I learnt how to use several new animation libraries to bring my vision to life. 
 - Customisable colour themes
 - Contact form which utilises Netlify forms
 - Project list with swipeable scrolling
-- Web app is responsive to all screen sizes
+- Responsive to all screen sizes
 
 
 <!-- ROADMAP -->
@@ -73,17 +73,20 @@ I learnt how to use several new animation libraries to bring my vision to life. 
 <!-- Future Improvements -->
 ## Figma
 
-Carried out an initial wire frame on Figma to visual the ideas I had about the site
+Made a low fidelity wire frame on Figma to visualise the ideas I had for my website.
 
 [Figma Link](https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1)
 
+<p>
+  <img src="./public/Wireframe.PNG">
+</p>
 
 ## SEO
 
-Was able to obtain the highest score for the Google Lighthouse report, gaining an average of 100 for all categories for desktop.
+Was able to obtain the highest score for the Google Lighthouse report, gaining an average of 100 for all categories on desktop.
 
 <p>
-  <img src="./public/images/SEO.PNG">
+  <img src="./public/SEO.PNG">
 </p>
 
 ## Future work
