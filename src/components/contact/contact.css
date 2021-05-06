@@ -172,7 +172,10 @@ input:focus::placeholder {
 }
 
 @media (max-width: 767px) {
-  .contact-label{
+  form {
+    margin: 0 auto;
+  }
+  .contact-label {
     width: 70vw;
     min-width: 265px;
   }
