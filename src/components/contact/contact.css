@@ -172,21 +172,15 @@ input:focus::placeholder {
 }
 
 @media (max-width: 767px) {
-  .contact-summary {
+  .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .contact-btn-div {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 4rem;
-  }
-
   .footer p {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
   }
 
