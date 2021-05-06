@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<p align="center">
+  <a href="https://github.com/samatarx/Sneaker-Launch">
+    <img src='./public/images/IMG_0290.jpg' width='250px' >
+  </a>
 
-## Available Scripts
+  <h3 align="center">Personal Portfolio</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    A site which demonstrates my skills and showcases my projects
+    <br />
+    <br />
+    <a href="https://top100cryptocurrencies.netlify.app/" target='#'>View Demo</a>
+    ·
+    <a href="https://github.com/samatarx/Sneaker-Launch/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/samatarx/Sneaker-Launch/issues">Request Feature</a>
+  </p>
+</p>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. [About the Project](#about-the-project)
+2. [Built With](#built-with)
+3. [Features](#features)
+4. [React](#react)
+5. [Figma](#figma)
+6. [SEO](#seo)
+7. [Future Work](#future-work)
+8. [Contact](#contact)
+9. [Acknowledgements](#acknowledgements)
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
 
-### `npm run build`
+I created a my portfolio to demonstrate my ability to create stunning sites and to also showcase my previous work. Before starting the site I created a simple wireframe so that I could have something to work towards. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I learnt how to use several new animation libraries to bring my vision to life. Implemented a Netlify form for the first time, was able to make the site accessible and responsive to all screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React JS](https://reactjs.org/)
+- [Figma](https://figma.com)
+- HTML/CSS/JS
 
-### `npm run eject`
+<!-- USAGE EXAMPLES -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Landing page with particle animations and text transitions
+- Functional about me section
+- Customisable colour themes
+- Contact form which utilises Netlify forms
+- Project list with swipeable scrolling
+- Web app is responsive to all screen sizes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- ROADMAP -->
 
-## Learn More
+## React
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Implemented the use of React hooks throughout the project
+- Utilised useEffect to close the navigation automatically after 15 seconds
+- Was able to reduce the size of components by mapping through data exported from an addtional JS file 
+- Leveraged external libraries to create the form and animation effects for the site
+- Used useRef to navigate through the site seemlessly
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Future Improvements -->
+## Figma
 
-### Code Splitting
+Carried out an initial wire frame on Figma to visual the ideas I had about the site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Figma Link](https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## SEO
 
-### Making a Progressive Web App
+Was able to obtain the highest score for the Google Lighthouse report, gaining an average of 100 for all categories for desktop.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p>
+  <img src="./public/images/SEO.PNG">
+</p>
 
-### Advanced Configuration
+## Future work
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Add a blog section to my site
 
-### Deployment
+<!-- CONTACT -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+Samatar Xasan - [@samatarcodes](https://twitter.com/samatarcodes)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [samatar.co](https://samatar.co)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [Swiper JS](https://swiperjs.com/)
+- [React Spring](https://react-spring.io/)
+- [Particle JS](https://github.com/VincentGarreau/particles.js/)
+- [UUID](https://www.npmjs.com/package/uuid)
+- [React-Interval](https://www.npmjs.com/package/react-interval)
