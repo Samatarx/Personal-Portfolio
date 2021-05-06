@@ -173,7 +173,7 @@ input:focus::placeholder {
 
 @media (max-width: 767px) {
   .contact-label{
-    width: 100%;
+    width: 70vw;
     min-width: 265px;
   }
   textarea {
