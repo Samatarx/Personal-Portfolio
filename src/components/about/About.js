@@ -71,7 +71,7 @@ function About({ colour }) {
       {size === 0 && (
         <p>
           <span className={`${colour}`}>
-            I am London based self-taught software developer
+            I'm a London based self-taught software developer
           </span>{" "}
           looking for my first graduate/junior role.
         </p>
@@ -82,7 +82,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-              I am London based self-taught software developer
+            I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
@@ -99,7 +99,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-              I am London based self-taught software developer
+            I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
@@ -123,7 +123,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-              I am London based self-taught software developer
+            I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
