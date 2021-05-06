@@ -172,8 +172,16 @@ input:focus::placeholder {
 }
 
 @media (max-width: 767px) {
+
+  .contact-summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   form {
     margin: 0 auto;
+    text-align: center;
   }
   .contact-label {
     width: 70vw;
