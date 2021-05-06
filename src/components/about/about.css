@@ -44,14 +44,17 @@ legend {
   width: 100%;
 }
 
-@media (max-width: 500x) {
-  .about-summary {
-    padding: 1rem;
-  }
-}
+
 
 @media (min-width: 1500px) {
   .about-summary {
     padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .fields {
+    width: 70vw;
   }
 }
