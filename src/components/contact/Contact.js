@@ -9,7 +9,7 @@ const Contact = ({ colour, handleBackClick }) => {
 
       <p className="contact-desc">
         If you would like to <span className={`${colour}`}>hire me</span> or
-        just want to say Hi, <br></br> fill in the form below.
+        just want to say Hi, fill in the form below.
       </p>
 
       <div className="contact-form">
@@ -65,7 +65,7 @@ const Contact = ({ colour, handleBackClick }) => {
       </div>
       <div className="contact-socials">
         <p className="contact-footer">
-          Alternatively, you can get in touch with me via Social Media or ping
+          Alternatively, you can get in touch with me via Social Media or send
           me an{" "}
           <span>
             {" "}
