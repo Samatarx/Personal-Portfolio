@@ -88,14 +88,16 @@
 
 .card-content {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
   height: auto;
+  align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 .card-image {
-  width: 200px;
-  height: 300px;
+  width: 50%;
+  height: auto;
   border: 1px solid #fff;
   margin: 5px 10px;
 }
@@ -107,10 +109,11 @@
 }
 
 .card-links {
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  width: auto;
+  padding-right: 10px;
 }
 
 .card-links a {
@@ -120,14 +123,6 @@
 @media (max-width: 850px) {
   .project-title-left {
     flex-direction: column;
-  }
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    width: 100%;
-    margin: auto;
   }
 }
 @media (max-width: 767px) {
@@ -144,14 +139,6 @@
   .card-image {
     width: 70vw;
     height: auto;
-  }
-
-  .card-links {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 10px;
   }
 
   .card-links a {
