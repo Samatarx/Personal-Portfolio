@@ -83,7 +83,7 @@ const techSoon = [
     icon: SiCsharp,
   },
   {
-    name: "ASP.Net",
+    name: "ASP.NET",
     icon: SiDotNet,
   },
   {
