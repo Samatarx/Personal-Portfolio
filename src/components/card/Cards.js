@@ -9,7 +9,7 @@ const Cards = ({ colour }) => {
 
   return (
     <summary className="cards cards-summary">
-      <h2 className="sub-heading-cards">Projects</h2>
+      <h2 className="sub-heading-cards">Featured Projects</h2>
       {cards.map((card) => {
         return <Project {...card} key={uuidv4()} colour={colour} />;
       })}

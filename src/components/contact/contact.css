@@ -114,6 +114,8 @@ input:focus::placeholder {
   }
   to {
     opacity: 1;
+    background-color: #fff;
+    color: #000;
   }
 }
 

@@ -17,7 +17,7 @@ const cardData = [
     github: "https://github.com/Samatarx/Crypto-Dashboard",
     tech: ["HTML", "CSS", "JS", "React", "API", "Netlify"],
     desc:
-      " I created a dashboard which displays the current prices and price changes of the top 100 coins. I found an amazing free API and I leveraged my React.js skills to build an elegant dashboard.",
+      " I created a dashboard that displays the current prices and price changes of the top 100 coins. I found an amazing free API and I leveraged my React.js skills to build an elegant dashboard.",
   },
   {
     id: "1",
@@ -27,7 +27,7 @@ const cardData = [
     github: "https://github.com/Samatarx/Sneaker-Launch",
     tech: ["HTML", "CSS", "Bootstrap", "JS", "React", "AWS"],
     desc:
-      "I built a sneaker launch website to demonstrate my ability to use React, React-Router and Bootstrap. I have previously used react router in tutorials and I wanted to try it myself and put my own spin on it. Project is hosted on AWS.",
+      "I built a sneaker launch website to demonstrate my ability to use React, React-Router and Bootstrap. I have previously used react-router in tutorials and I wanted to try it myself and put my own spin on it. The project is hosted on AWS, using the AWS Amplify feature.",
   },
   {
     id: "2",
@@ -37,7 +37,7 @@ const cardData = [
     github: "https://github.com/Samatarx/Stripe-Clone",
     tech: ["HTML", "CSS", "JS", "React", "Netlify"],
     desc:
-      "Developed a site clone of the Stripe landing page using React Hooks with particular focus on using the Context API to move props and state values between different components",
+      "Developed a site clone of the Stripe landing page using React Hooks with a particular focus on using the Context API to move props and state values between different components",
   },
   {
     id: "3",
@@ -49,7 +49,7 @@ const cardData = [
     figma:
       "https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1",
     desc:
-      "Made my personal portfolio using React and leveraged the use of external animation libraries like React Spring. Furthermore, I used useRef to create a seemless navigation between different components",
+      "Made my personal portfolio using React and leveraged the use of external animation libraries like React Spring. Furthermore, I used useRef to create a seamless navigation between different components",
   },
   {
     id: "4",
