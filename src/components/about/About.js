@@ -154,13 +154,13 @@ function About({ colour }) {
       <p>
         Responsive Web Design - FreeCodeCamp -{" "}
         <span className={`${colour}`}>
-          Approxiametly 300 hours of coursework
+        Approximately 300 hours of coursework
         </span>
       </p>
       <p>
         JavaScript Algorithms and Data Structures - FreeCodeCamp -{" "}
         <span className={`${colour}`}>
-          Approxiametly 300 hours of coursework
+        Approximately 300 hours of coursework
         </span>
       </p>
       <p>
