@@ -42,6 +42,7 @@ const Project = ({
           </div>
           {show ? (
             <AiOutlineMinus
+            data-testid='minus'
               onClick={() => {
                 showAndHide();
               }}
@@ -49,6 +50,7 @@ const Project = ({
             />
           ) : (
             <AiOutlinePlus
+            data-testid="plus"
               onClick={() => {
                 showAndHide();
               }}
