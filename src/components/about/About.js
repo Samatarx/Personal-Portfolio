@@ -4,13 +4,14 @@ import "./about.css";
 function About({ colour }) {
   const [size, setSize] = useState(1);
   return (
-    <summary className="about-summary">
+    <summary data-testid='container' className="about-summary">
       <h2 className="sub-heading">About Me</h2>
       <section className="fields">
         <legend className="thin-para">Length:</legend>
         <div className="radio-field">
           <div className="radio-div">
             <input
+            data-testid="zero-btn"
               className="radio-btn"
               type="radio"
               name="shortest"
