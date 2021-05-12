@@ -13,7 +13,7 @@ function App() {
   
 
   useEffect(() => {
-  ReactGa.initialize('G-PQBD25GVLY')
+  ReactGa.initialize('UA-196802002-1')
     ReactGa.pageview(window.location.pathname)
   }, [])
 
