@@ -10,10 +10,11 @@ import Contact from "../contact/Contact";
 import ReactGa from 'react-ga'
 
 function App() {
+  
 
   useEffect(() => {
   ReactGa.initialize('G-PQBD25GVLY')
-    ReactGa.pageview('/')
+    ReactGa.pageview(window.location.pathname)
   }, [])
 
   const [nav, setNav] = useState(true);
