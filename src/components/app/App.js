@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Nav from "../nav/Nav";
 import Header from "../header/Header";
 import About from "../about/About";
@@ -7,8 +7,15 @@ import TechStack from "../techStack/TechStack";
 import Cards from "../card/Cards";
 import CarouselComp from "../carousel/CarouselComp";
 import Contact from "../contact/Contact";
+import ReactGa from 'react-ga'
 
 function App() {
+
+  useEffect(() => {
+  ReactGa.initialize('G-PQBD25GVLY')
+    ReactGa.pageview('/')
+  }, [])
+
   const [nav, setNav] = useState(true);
   const [colour, setColour] = useState("yellow");
 
