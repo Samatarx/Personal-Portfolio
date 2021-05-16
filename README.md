@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/samatarx/Personal-Portfolio">
-    <img src='./public/IMG_0290.jpg' width='250px' >
+    <img src='./public/Thumbnail.PNG' width='250px' >
   </a>
 
   <h3 align="center">Personal Portfolio</h3>
