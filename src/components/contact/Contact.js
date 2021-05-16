@@ -103,14 +103,14 @@ const Contact = ({ colour, handleBackClick }) => {
         </div>
       </div>
       <p className="footer">
-        Designed and Developed by{" "}
+        Designed and Developed by
         <span
           onClick={() => {
             handleBackClick("home");
           }}
           className={`${colour} name-span`}
         >
-          Samatar Xasan
+          {" "}Samatar Xasan
         </span>
       </p>
     </summary>
