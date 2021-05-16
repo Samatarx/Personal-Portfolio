@@ -70,7 +70,7 @@ const Contact = ({ colour, handleBackClick }) => {
           <span>
             {" "}
             <a
-              href="mailto:samatar.xasan@gmail.com"
+              href="mailto:samatarcodes@gmail.com"
               aria-label="Email"
               className={`${colour} quick-link`}
             >
