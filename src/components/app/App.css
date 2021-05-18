@@ -21,6 +21,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  opacity: 1; /* Firefox */
+  font-family: inherit;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000;
+}
 body {
   font-family: "Roboto Mono", monospace;
   background: var(--main-theme);
