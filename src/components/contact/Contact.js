@@ -24,6 +24,47 @@ const Contact = ({ colour, handleBackClick }) => {
         method="POST"
         onSubmit={(e) => onSubmission(e)}
       >
+        <div className={`contact-form-${submit}`}>
+          <input type="hidden" name="form-name" value="contact-form" />
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label `}
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label`}
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <textarea
+                className={`${colour}-bg contact-text`}
+                name="message"
+                placeholder="Message"
+                rows="5"
+                spellCheck="false"
+              ></textarea>
+            </label>
+          </p>
+          <div className="contact-btn-div">
+            <button className={`${colour}-bg contact-btn`} type="submit">
+              SEND
+            </button>
+          </div>
+        </div>
         {submit ? (
           <div className="success-form">
             <svg
@@ -47,47 +88,7 @@ const Contact = ({ colour, handleBackClick }) => {
             <p>Your message has been sent!</p>
           </div>
         ) : (
-          <div className="contact-form">
-            <input type="hidden" name="form-name" value="contact-form" />
-            <p>
-              <label>
-                <input
-                  className={`${colour}-bg contact-label `}
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label>
-                <input
-                  className={`${colour}-bg contact-label`}
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label>
-                <textarea
-                  className={`${colour}-bg contact-text`}
-                  name="message"
-                  placeholder="Message"
-                  rows="5"
-                  spellCheck="false"
-                ></textarea>
-              </label>
-            </p>
-            <div className="contact-btn-div">
-              <button className={`${colour}-bg contact-btn`} type="submit">
-                SEND
-              </button>
-            </div>
-          </div>
+          <p> </p>
         )}
       </form>
       <div className="resume">
