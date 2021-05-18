@@ -18,37 +18,36 @@ const Contact = ({ colour, handleBackClick }) => {
         If you would like to <span className={`${colour}`}>hire me</span> or
         just want to say Hi, fill in the form below.
       </p>
-
-      {submit ? (
-        <div className="success-form">
-          <svg
-            className={` ${colour}-bg ${colour} checkmark`}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 52 52"
-          >
-            <circle
-              className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
-              cx="26"
-              cy="26"
-              r="25"
-              fill="none"
-            />
-            <path
-              className={` ${colour} checkmark__check`}
-              fill="none"
-              d="M14.1 27.2l7.1 7.2 16.7-16.8"
-            />
-          </svg>
-          <p>Your message has been sent!</p>
-        </div>
-      ) : (
-        <div className="contact-form">
-          <form
-            name="contact-form"
-            data-netlify="true"
-            method="POST"
-            onSubmit={(e) => onSubmission(e)}
-          >
+      <form
+        name="contact-form"
+        data-netlify="true"
+        method="POST"
+        onSubmit={(e) => onSubmission(e)}
+      >
+        {submit ? (
+          <div className="success-form">
+            <svg
+              className={` ${colour}-bg ${colour} checkmark`}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 52"
+            >
+              <circle
+                className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
+                cx="26"
+                cy="26"
+                r="25"
+                fill="none"
+              />
+              <path
+                className={` ${colour} checkmark__check`}
+                fill="none"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8"
+              />
+            </svg>
+            <p>Your message has been sent!</p>
+          </div>
+        ) : (
+          <div className="contact-form">
             <input type="hidden" name="form-name" value="contact-form" />
             <p>
               <label>
@@ -88,9 +87,9 @@ const Contact = ({ colour, handleBackClick }) => {
                 SEND
               </button>
             </div>
-          </form>
-        </div>
-      )}
+          </div>
+        )}
+      </form>
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
@@ -139,18 +138,18 @@ const Contact = ({ colour, handleBackClick }) => {
         </div>
       </div>
       <div className="footer">
-      <p>
-        Designed and Developed by {" "}
-        <span
-          onClick={() => {
-            handleBackClick("home");
-          }}
-          className={`${colour} name-span quick-link`}
-        >
-         
-          Samatar Xasan
-        </span>
-      </p></div>
+        <p>
+          Designed and Developed by{" "}
+          <span
+            onClick={() => {
+              handleBackClick("home");
+            }}
+            className={`${colour} name-span quick-link`}
+          >
+            Samatar Xasan
+          </span>
+        </p>
+      </div>
     </summary>
   );
 };
