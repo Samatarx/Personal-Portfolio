@@ -25,15 +25,13 @@ const Contact = ({ colour, handleBackClick }) => {
   };
 
   const onSubmission = (e) => {
-   
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-form", ...state }),
-    }).then(() => alert("Success!"));
+    });
     e.preventDefault();
     setSubmit(true);
-    console.log(e);
   };
 
   return (
@@ -45,83 +43,81 @@ const Contact = ({ colour, handleBackClick }) => {
         just want to say Hi, fill in the form below.
       </p>
       <div className="contact-form">
-        
         {submit ? (
-            <div className="success-form">
-              <svg
-                className={` ${colour}-bg ${colour} checkmark`}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 52 52"
-              >
-                <circle
-                  className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
-                  cx="26"
-                  cy="26"
-                  r="25"
-                  fill="none"
-                />
-                <path
-                  className={` ${colour} checkmark__check`}
-                  fill="none"
-                  d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                />
-              </svg>
-              <p>Message has been sent</p>
-            </div>
-          ) : (
-            <form
-          name="contact-form"
-          method="POST"
-          data-netlify="true"
-          onSubmit={(e) => {
-            onSubmission(e);
-          }}
-        >
-          <input type="hidden" name="form-name" value="contact-form" />
-          <p>
-            <label>
-              <input
-                className={`${colour}-bg contact-label `}
-                onChange={handleChange}
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
+          <div className="success-form">
+            <svg
+              className={` ${colour}-bg ${colour} checkmark`}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 52"
+            >
+              <circle
+                className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
+                cx="26"
+                cy="26"
+                r="25"
+                fill="none"
               />
-            </label>
-          </p>
-          <p>
-            <label>
-              <input
-                className={`${colour}-bg contact-label`}
-                onChange={handleChange}
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
+              <path
+                className={` ${colour} checkmark__check`}
+                fill="none"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8"
               />
-            </label>
-          </p>
-          <p>
-            <label>
-              <textarea
-                className={`${colour}-bg contact-text`}
-                onChange={handleChange}
-                name="message"
-                placeholder="Message"
-                rows="5"
-                spellCheck="false"
-              ></textarea>
-            </label>
-          </p>
-          <div className="contact-btn-div">
-            <button className={`${colour}-bg contact-btn`} type="submit">
-              SEND
-            </button>
+            </svg>
+            <p>Message has been sent</p>
           </div>
-          
-        </form>
-          )}
+        ) : (
+          <form
+            name="contact-form"
+            method="POST"
+            data-netlify="true"
+            onSubmit={(e) => {
+              onSubmission(e);
+            }}
+          >
+            <input type="hidden" name="form-name" value="contact-form" />
+            <p>
+              <label>
+                <input
+                  className={`${colour}-bg contact-label `}
+                  onChange={handleChange}
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  className={`${colour}-bg contact-label`}
+                  onChange={handleChange}
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                <textarea
+                  className={`${colour}-bg contact-text`}
+                  onChange={handleChange}
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  spellCheck="false"
+                ></textarea>
+              </label>
+            </p>
+            <div className="contact-btn-div">
+              <button className={`${colour}-bg contact-btn`} type="submit">
+                SEND
+              </button>
+            </div>
+          </form>
+        )}
       </div>
       <div className="resume">
         Click here for a copy of my CV{" "}
