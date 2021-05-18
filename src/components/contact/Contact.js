@@ -6,6 +6,12 @@ import "./contact.css";
 const Contact = ({ colour, handleBackClick }) => {
   const [submit, setSubmit] = useState(false);
   const onSubmission = (e) => {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData
+    })
     setSubmit(true);
     console.log(e);
   };
