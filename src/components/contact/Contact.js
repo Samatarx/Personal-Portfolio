@@ -1,8 +1,15 @@
+import {useState} from 'react'
 import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import PDF from "../../images/Samatar_Xasan_Resume.pdf";
 import "./contact.css";
 
 const Contact = ({ colour, handleBackClick }) => {
+  const [submit, setSubmit] = useState(false)
+  const onSubmission = (e) =>{
+    e.preventDefault()
+    setSubmit(true)
+    console.log(e)
+  }
   return (
     <summary className="contact-summary">
       <h2 className="sub-heading">Get in Touch</h2>
@@ -11,9 +18,29 @@ const Contact = ({ colour, handleBackClick }) => {
         If you would like to <span className={`${colour}`}>hire me</span> or
         just want to say Hi, fill in the form below.
       </p>
-
-      <div className="contact-form">
-        <form name="contact-form" method="POST" data-netlify="true">
+{/* method="POST" */}
+      
+      {submit? <div className="success-form"> <svg
+            className={` ${colour}-bg ${colour} checkmark`}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 52 52"
+          >
+            <circle
+              className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
+              cx="26"
+              cy="26"
+              r="25"
+              fill="none"
+            />
+            <path
+              className={` ${colour} checkmark__check`}
+              fill="none"
+              d="M14.1 27.2l7.1 7.2 16.7-16.8"
+            />
+          </svg>
+          <p>Your message has been sent, I'll get back to you soon</p>
+          </div>: <div className="contact-form">
+        <form name="contact-form"  data-netlify="true" onSubmit={(e)=> onSubmission(e)} >
           <input type="hidden" name="form-name" value="contact-form" />
           <p>
             <label>
@@ -49,12 +76,13 @@ const Contact = ({ colour, handleBackClick }) => {
             </label>
           </p>
           <div className="contact-btn-div">
-            <button className={`${colour}-bg contact-btn`} type="submit">
+          <button className={`${colour}-bg contact-btn`} type="submit">
               SEND
             </button>
           </div>
+          
         </form>
-      </div>
+      </div>  }
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
