@@ -138,18 +138,19 @@ const Contact = ({ colour, handleBackClick }) => {
           </a>
         </div>
       </div>
-      <p className="footer">
-        Designed and Developed by
+      <div className="footer">
+      <p>
+        Designed and Developed by {" "}
         <span
           onClick={() => {
             handleBackClick("home");
           }}
-          className={`${colour} name-span`}
+          className={`${colour} name-span quick-link`}
         >
-          {" "}
+         
           Samatar Xasan
         </span>
-      </p>
+      </p></div>
     </summary>
   );
 };
