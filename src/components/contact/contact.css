@@ -13,17 +13,12 @@
   padding: 1rem;
 }
 
-.contact-form-false {
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-}
-
-.contact-form-true {
-  display: none;
-  visibility: hidden;
 }
 
 form p {

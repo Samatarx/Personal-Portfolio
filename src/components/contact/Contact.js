@@ -6,7 +6,6 @@ import "./contact.css";
 const Contact = ({ colour, handleBackClick }) => {
   const [submit, setSubmit] = useState(false);
   const onSubmission = (e) => {
-    e.preventDefault();
     setSubmit(true);
     console.log(e);
   };
@@ -18,13 +17,8 @@ const Contact = ({ colour, handleBackClick }) => {
         If you would like to <span className={`${colour}`}>hire me</span> or
         just want to say Hi, fill in the form below.
       </p>
-      <form
-        name="contact-form"
-        data-netlify="true"
-        method="POST"
-        onSubmit={(e) => onSubmission(e)}
-      >
-        <div className={`contact-form-${submit}`}>
+      <div className="contact-form">
+        <form name="contact-form" method='POST' data-netlify="true" onSubmit={(e)=>{onSubmission(e)}}>
           <input type="hidden" name="form-name" value="contact-form" />
           <p>
             <label>
@@ -60,41 +54,41 @@ const Contact = ({ colour, handleBackClick }) => {
             </label>
           </p>
           <div className="contact-btn-div">
-            <button className={`${colour}-bg contact-btn`} type="submit">
+            <button className={`${colour}-bg contact-btn`} type="submit"  >
               SEND
             </button>
           </div>
-        </div>
-        {submit ? (
-          <div className="success-form">
-            <svg
-              className={` ${colour}-bg ${colour} checkmark`}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 52 52"
-            >
-              <circle
-                className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
-                cx="26"
-                cy="26"
-                r="25"
-                fill="none"
-              />
-              <path
-                className={` ${colour} checkmark__check`}
-                fill="none"
-                d="M14.1 27.2l7.1 7.2 16.7-16.8"
-              />
-            </svg>
-            <p>Your message has been sent!</p>
-          </div>
-        ) : (
-          <p> </p>
-        )}
-      </form>
+          {submit ? (
+            <div className="success-form">
+              <svg
+                className={` ${colour}-bg ${colour} checkmark`}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 52 52"
+              >
+                <circle
+                  className={` ${colour}-bg ${colour}-stroke checkmark__circle`}
+                  cx="26"
+                  cy="26"
+                  r="25"
+                  fill="none"
+                />
+                <path
+                  className={` ${colour} checkmark__check`}
+                  fill="none"
+                  d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                />
+              </svg>
+              <p>Message has been sent</p>
+            </div>
+          ) : (
+            <p> </p>
+          )}
+        </form>
+      </div>
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-          <button className={`${colour}-bg download-btn resume-btn`}>
+          <button className={`${colour}-bg contact-btn resume-btn`}>
             Download
           </button>
         </a>
@@ -138,19 +132,18 @@ const Contact = ({ colour, handleBackClick }) => {
           </a>
         </div>
       </div>
-      <div className="footer">
-        <p>
-          Designed and Developed by{" "}
-          <span
-            onClick={() => {
-              handleBackClick("home");
-            }}
-            className={`${colour} name-span quick-link`}
-          >
-            Samatar Xasan
-          </span>
-        </p>
-      </div>
+      <p className="footer">
+        Designed and Developed by
+        <span
+          onClick={() => {
+            handleBackClick("home");
+          }}
+          className={`${colour} name-span`}
+        >
+          {" "}
+          Samatar Xasan
+        </span>
+      </p>
     </summary>
   );
 };
