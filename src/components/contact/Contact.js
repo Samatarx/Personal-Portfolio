@@ -25,12 +25,13 @@ const Contact = ({ colour, handleBackClick }) => {
   };
 
   const onSubmission = (e) => {
-    e.preventDefault();
+   
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-form", ...state }),
-    });
+    }).then(() => alert("Success!"));
+    e.preventDefault();
     setSubmit(true);
     console.log(e);
   };
