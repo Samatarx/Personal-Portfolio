@@ -26,7 +26,12 @@ const Project = ({
 
   return (
     <summary key={id}>
-      <div className="project-card">
+      <div
+        className="project-card"
+        onClick={() => {
+          showAndHide();
+        }}
+      >
         <div className="project-title-wrapper">
           <div className="project-title-left">
             <p className="project-title">{name}:</p>
@@ -42,7 +47,7 @@ const Project = ({
           </div>
           {show ? (
             <AiOutlineMinus
-            data-testid='minus'
+              data-testid="minus"
               onClick={() => {
                 showAndHide();
               }}
@@ -50,7 +55,7 @@ const Project = ({
             />
           ) : (
             <AiOutlinePlus
-            data-testid="plus"
+              data-testid="plus"
               onClick={() => {
                 showAndHide();
               }}
