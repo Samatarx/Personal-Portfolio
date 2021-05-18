@@ -76,6 +76,21 @@ input:focus::placeholder {
 }
 
 .contact-btn:hover {
+  background-color: #fff;
+  transform: translate(0.25em, -0.25em);
+}
+
+.download-btn {
+  border: 1px solid var(--main-theme);
+  outline: none;
+  width: 75px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-weight: bolder;
+}
+
+.download-btn:hover {
   animation: flicker 1s;
   animation-fill-mode: forwards;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.33));
@@ -196,15 +211,15 @@ input:focus::placeholder {
 }
 
 .yellow-stroke {
-  stroke:  var(--yellow-theme);
+  stroke: var(--yellow-theme);
 }
 
 .green-stroke {
-  stroke:  var(--green-theme);
+  stroke: var(--green-theme);
 }
 
 .red-stroke {
-  stroke:  var(--red-theme);
+  stroke: var(--red-theme);
 }
 
 .checkmark__circle {
