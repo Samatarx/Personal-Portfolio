@@ -5,16 +5,36 @@ import "./contact.css";
 
 const Contact = ({ colour, handleBackClick }) => {
   const [submit, setSubmit] = useState(false);
+
+  const [state, setState] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const onSubmission = (e) => {
     e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData
-    })
+      body: encode({ "form-name": "contact-form", ...state }),
+    });
     setSubmit(true);
     console.log(e);
   };
+
   return (
     <summary className="contact-summary">
       <h2 className="sub-heading">Get in Touch</h2>
@@ -24,47 +44,8 @@ const Contact = ({ colour, handleBackClick }) => {
         just want to say Hi, fill in the form below.
       </p>
       <div className="contact-form">
-        <form name="contact-form" method='POST' data-netlify="true" onSubmit={(e)=>{onSubmission(e)}}>
-          <input type="hidden" name="form-name" value="contact-form" />
-          <p>
-            <label>
-              <input
-                className={`${colour}-bg contact-label `}
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              <input
-                className={`${colour}-bg contact-label`}
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              <textarea
-                className={`${colour}-bg contact-text`}
-                name="message"
-                placeholder="Message"
-                rows="5"
-                spellCheck="false"
-              ></textarea>
-            </label>
-          </p>
-          <div className="contact-btn-div">
-            <button className={`${colour}-bg contact-btn`} type="submit"  >
-              SEND
-            </button>
-          </div>
-          {submit ? (
+        
+        {submit ? (
             <div className="success-form">
               <svg
                 className={` ${colour}-bg ${colour} checkmark`}
@@ -87,9 +68,59 @@ const Contact = ({ colour, handleBackClick }) => {
               <p>Message has been sent</p>
             </div>
           ) : (
-            <p> </p>
-          )}
+            <form
+          name="contact-form"
+          method="POST"
+          data-netlify="true"
+          onSubmit={(e) => {
+            onSubmission(e);
+          }}
+        >
+          <input type="hidden" name="form-name" value="contact-form" />
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label `}
+                onChange={handleChange}
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                className={`${colour}-bg contact-label`}
+                onChange={handleChange}
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <textarea
+                className={`${colour}-bg contact-text`}
+                onChange={handleChange}
+                name="message"
+                placeholder="Message"
+                rows="5"
+                spellCheck="false"
+              ></textarea>
+            </label>
+          </p>
+          <div className="contact-btn-div">
+            <button className={`${colour}-bg contact-btn`} type="submit">
+              SEND
+            </button>
+          </div>
+          
         </form>
+          )}
       </div>
       <div className="resume">
         Click here for a copy of my CV{" "}
