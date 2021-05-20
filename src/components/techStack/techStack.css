@@ -30,7 +30,7 @@
 }
 
 .tech-icon-name {
-  font-size: 0.65rem;
+  font-size: 1rem;
   padding-top: 0.5rem;
   text-align: center;
   word-spacing: 0.1px;
@@ -46,6 +46,9 @@
 @media (max-width: 800px) {
   .tech-icon-logo {
     font-size: 50px;
+  }
+  .tech-icon-name {
+    font-size: 0.67rem;
   }
 }
 
