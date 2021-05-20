@@ -122,8 +122,8 @@ const Contact = ({ colour, handleBackClick }) => {
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-          <button className={`${colour}-bg contact-btn resume-btn`}>
-            Download
+          <button className={`${colour}-bg download-btn`}>
+            DOWNLOAD
           </button>
         </a>
       </div>
@@ -167,7 +167,7 @@ const Contact = ({ colour, handleBackClick }) => {
         </div>
       </div>
       <p className="footer">
-        Designed and Developed by
+        Designed and Developed by {" "}
         <span
           onClick={() => {
             handleBackClick("home");
