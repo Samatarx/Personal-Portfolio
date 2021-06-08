@@ -132,6 +132,17 @@ const carouselData = [
     title: "First Website",
     desc: "First full site made using HTML and CSS",
     site: "https://codepen.io/samatarx/full/eYJapPW",
+  }, {
+    id: 21,
+    title: "SRIG",
+    desc: "A landing paged which links Netlify forms to Mailchimp using Zapier",
+    site: "https://srig.so",
+  },
+  {
+    id: 22,
+    title: "Sweet One",
+    desc: "Online booking landing page for a small business",
+    figma: "https://www.figma.com/file/b6EWwMReFt6ZDPIQbs3Xtk/Sweet-One-Landing-Page-Concept?node-id=0%3A1",
   },
 ];
 
