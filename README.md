@@ -77,7 +77,7 @@ Made a low fidelity wire frame on Figma to visualise the ideas I had for my webs
 
 [Figma Link](https://www.figma.com/file/2xkXhjaSkSbtAKJHFeEyYb/Portfolio?node-id=0%3A1)
 
-<p>
+<p align="center">
   <img src="./public/Wireframe.PNG">
 </p>
 
@@ -85,8 +85,24 @@ Made a low fidelity wire frame on Figma to visualise the ideas I had for my webs
 
 Was able to obtain the highest score for the Google Lighthouse report, gaining an average of 100 for all categories on desktop.
 
-<p>
+<p align="center">
   <img src="./public/SEO.PNG">
+</p>
+
+## Google Analytics
+
+I added Google Analytics to my website to track where visitors to my site were coming from. Over the space of one month, my site has attracted over 500 unique visitors from all over the world and on every continent. Additionally, I am also able to monitor how much time a visitor spends on my site.
+
+<p align="center">
+  <img src="./public/Metrics.PNG">
+</p>
+
+## Hotjar
+
+I used Hotjar to monitor where users on my website were clicking.
+
+<p align="center">
+  <img src="./public/Heatmap.PNG">
 </p>
 
 ## Future work
