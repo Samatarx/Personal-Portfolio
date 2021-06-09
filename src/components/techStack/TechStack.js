@@ -40,7 +40,7 @@ function TechStack({ colour }) {
         following:
         <br />
         <br />A web scrapper with Python, AR/VR applications using Unity and
-        Mobile apps with React Native
+        Mobile apps with React Native.
       </p>
       <div className="tech-icons">
         {techFuture.map((tech) => {
