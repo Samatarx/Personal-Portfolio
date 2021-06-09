@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./about.css";
+import { AiOutlineLink } from "react-icons/ai";
 
 function About({ colour }) {
   const [size, setSize] = useState(1);
   return (
-    <summary data-testid='container' className="about-summary">
+    <summary data-testid="container" className="about-summary">
       <h2 className="sub-heading">About Me</h2>
       <section className="fields">
         <legend className="thin-para">Length:</legend>
         <div className="radio-field">
           <div className="radio-div">
             <input
-            data-testid="zero-btn"
+              data-testid="zero-btn"
               className="radio-btn"
               type="radio"
               name="shortest"
@@ -83,7 +84,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-            I'm a London based self-taught software developer
+              I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
@@ -100,7 +101,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-            I'm a London based self-taught software developer
+              I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
@@ -124,7 +125,7 @@ function About({ colour }) {
           {" "}
           <p>
             <span className={`${colour}`}>
-            I'm a London based self-taught software developer
+              I'm a London based self-taught software developer
             </span>{" "}
             looking for my first graduate/junior role.
           </p>{" "}
@@ -155,17 +156,41 @@ function About({ colour }) {
       <p>
         Responsive Web Design - FreeCodeCamp -{" "}
         <span className={`${colour}`}>
-        Approximately 300 hours of coursework
-        </span>
+          Approximately 300 hours of coursework
+        </span>{" "}
+        <a
+          href="https://www.freecodecamp.org/certification/samatar/responsive-web-design"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Website Link"
+        >
+          <AiOutlineLink />
+        </a>
       </p>
       <p>
         JavaScript Algorithms and Data Structures - FreeCodeCamp -{" "}
         <span className={`${colour}`}>
-        Approximately 300 hours of coursework
-        </span>
+          Approximately 300 hours of coursework
+        </span>{" "}
+        <a
+          href="https://www.freecodecamp.org/certification/samatar/javascript-algorithms-and-data-structures"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Website Link"
+        >
+          <AiOutlineLink />
+        </a>
       </p>
       <p>
-        JavaScript Essentials - <span className={`${colour}`}>LinkedIn</span>
+        JavaScript Essentials - <span className={`${colour}`}>LinkedIn</span>{" "}
+        <a
+          href="https://www.dropbox.com/s/brqsuhnb1e0pwd8/CertificateOfCompletion_JavaScript%20Essential%20Training%20%281%29.pdf?dl=0"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Website Link"
+        >
+          <AiOutlineLink />
+        </a>
       </p>
       <h4>Bachelors</h4>
       <p>
