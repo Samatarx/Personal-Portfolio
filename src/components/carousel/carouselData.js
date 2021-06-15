@@ -135,7 +135,7 @@ const carouselData = [
   }, {
     id: 21,
     title: "SRIG",
-    desc: "A landing paged which links Netlify forms to Mailchimp using Zapier",
+    desc: "Landing page that links Netlify forms to Mailchimp using Zapier",
     site: "https://srig.so",
   },
   {
