@@ -1,4 +1,4 @@
-import { AiFillGithub } from "react-icons/ai";
+// import { AiFillGithub } from "react-icons/ai";
 import { DiCss3, DiDatabase, DiHtml5 } from "react-icons/di";
 import {
   SiJavascript,
@@ -9,8 +9,8 @@ import {
   SiDotNet,
   SiPython,
   SiGit,
-  SiGatsby,
-  SiMaterialUi,
+  // SiGatsby,
+  // SiMaterialUi,
   SiJest,
   SiUnity,
   SiNextDotJs,
@@ -32,8 +32,16 @@ const techNow = [
     icon: SiJavascript,
   },
   {
+    name: "C#",
+    icon: SiCsharp,
+  },
+  {
     name: "React",
     icon: FaReact,
+  },
+  {
+    name: "SQL",
+    icon: DiDatabase,
   },
   {
     name: "Figma",
@@ -43,10 +51,10 @@ const techNow = [
     name: "Bootstrap",
     icon: SiBootstrap,
   },
-  {
-    name: "Material Ui",
-    icon: SiMaterialUi,
-  },
+  // {
+  //   name: "Material Ui",
+  //   icon: SiMaterialUi,
+  // },
   {
     name: "AWS",
     icon: FaAws,
@@ -63,33 +71,27 @@ const techNow = [
     name: "Git",
     icon: SiGit,
   },
-  {
-    name: "Github",
-    icon: AiFillGithub,
-  },
+  // {
+  //   name: "Github",
+  //   icon: AiFillGithub,
+  // },
 ];
 
 const techSoon = [
-  {
-    name: "Jest",
-    icon: SiJest,
-  },
-  {
-    name: "Gatsby",
-    icon: SiGatsby,
-  },
-  {
-    name: "C#",
-    icon: SiCsharp,
-  },
+
   {
     name: "ASP.NET",
     icon: SiDotNet,
   },
   {
-    name: "SQL",
-    icon: DiDatabase,
+    name: "Jest",
+    icon: SiJest,
   },
+  //  {
+  //   name: "Gatsby",
+  //   icon: SiGatsby,
+  // },
+
   {
     name: "Next JS",
     icon: SiNextDotJs,
