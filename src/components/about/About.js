@@ -152,7 +152,7 @@ function About({ colour }) {
       )}
 
       <h3 className="sub-heading">Education</h3>
-      <h4>Certificates</h4>
+      <h4>Certificates:</h4>
       <p>
         Responsive Web Design - FreeCodeCamp -{" "}
         <span className={`${colour}`}>
@@ -192,12 +192,34 @@ function About({ colour }) {
           <AiOutlineLink />
         </a>
       </p>
-      <h4>Bachelors</h4>
+      <p>
+      Intermediate C# - <span className={`${colour}`}>Codecademy</span>{" "}
+        <a
+          href="https://www.dropbox.com/s/c6wgh50bdbcbjxa/Samatar%20Xasan%20C%23%20Certificate.pdf?dl=0"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Website Link"
+        >
+          <AiOutlineLink />
+        </a>
+      </p>
+      <p>
+      Learn SQL Course - <span className={`${colour}`}>Codecademy</span>{" "}
+        <a
+          href="https://www.dropbox.com/s/eisc0t5dvy7m3bo/Samatar%20Xasan%20SQL%20Certificate.pdf?dl=0"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Website Link"
+        >
+          <AiOutlineLink />
+        </a>
+      </p>
+      <h4>Bachelors:</h4>
       <p>
         City University London - BEng Civil Engineering -{" "}
         <span className={`${colour}`}> 1st Class Honours Degree</span>
       </p>
-      <h4>Masters</h4>
+      <h4>Masters:</h4>
       <p>
         City University London - MSc Civil Engineering Structures -{" "}
         <span className={`${colour}`}> Distinction</span>
