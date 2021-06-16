@@ -78,7 +78,6 @@ const techNow = [
 ];
 
 const techSoon = [
-
   {
     name: "ASP.NET",
     icon: SiDotNet,
