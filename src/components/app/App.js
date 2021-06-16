@@ -7,18 +7,17 @@ import TechStack from "../techStack/TechStack";
 import Cards from "../card/Cards";
 import CarouselComp from "../carousel/CarouselComp";
 import Contact from "../contact/Contact";
-import ReactGa from 'react-ga'
+import ReactGa from "react-ga";
 
 function App() {
-  
-
   useEffect(() => {
-  ReactGa.initialize('UA-196802002-1')
-    ReactGa.pageview(window.location.pathname)
-  }, [])
+    ReactGa.initialize("UA-196802002-1");
+    ReactGa.pageview(window.location.pathname);
+  }, []);
 
   const [nav, setNav] = useState(true);
   const [colour, setColour] = useState("yellow");
+  const [count, setCount] = useState(0);
 
   const changeNav = (boolean) => {
     setNav(boolean);
@@ -32,6 +31,23 @@ function App() {
 
   const handleBackClick = (type) => {
     pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
+  };
+
+  const logoSwitch = () => {
+    switch (count) {
+      case 0:
+        setColour("red");
+        setCount(1);
+        break;
+      case 1:
+        setColour("green");
+        setCount(2);
+        break;
+      default:
+        setColour("yellow");
+        setCount(0);
+        break;
+    }
   };
 
   return (
@@ -48,6 +64,7 @@ function App() {
         colour={colour}
         handleBackClick={handleBackClick}
         pageRefs={pageRefs}
+        logoSwitch={logoSwitch}
       />
 
       <section

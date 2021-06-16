@@ -8,7 +8,7 @@ import "./header.css";
 
 const titles = ["Developer", "Engineer", "JavaScript", "React", "Polymath"];
 
-function Header({ colour, handleBackClick, pageRefs }) {
+function Header({ colour, handleBackClick, pageRefs, logoSwitch }) {
   const props = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -30,7 +30,13 @@ function Header({ colour, handleBackClick, pageRefs }) {
     <article
       ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
     >
-      <animated.div style={props2} className={`logo ${colour}`}>
+      <animated.div
+        style={props2}
+        onClick={() => {
+          logoSwitch();
+        }}
+        className={`logo ${colour}`}
+      >
         SX
       </animated.div>
       <div className="heading-div">

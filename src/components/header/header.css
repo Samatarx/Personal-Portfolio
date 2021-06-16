@@ -11,12 +11,23 @@ article {
 
 .logo {
   position: absolute;
+  cursor: pointer;
   top: 3%;
   left: 4%;
   text-transform: uppercase;
   padding: 0.2rem 0.4rem;
   transform: skew(5deg, -5deg);
   border: 2px solid #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo:hover {
+  transform: skew(-5deg, 5deg);
 }
 
 .centre {
