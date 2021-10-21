@@ -65,7 +65,14 @@ const Project = ({
         </div>
         {show && (
           <div className="card-content">
-            {image}
+            <a className="image-link"
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Website link"
+            >
+              {image}
+            </a>
             <p className="card-desc">{desc}</p>
             <div className={`card-links ${colour}`}>
               {figma && (

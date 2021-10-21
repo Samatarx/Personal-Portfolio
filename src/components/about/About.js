@@ -72,22 +72,17 @@ function About({ colour }) {
 
       {size === 0 && (
         <p>
-          <span className={`${colour}`}>
-            I'm a London based self-taught software developer
-          </span>{" "}
-          looking for my first graduate/junior role.
+          I am a London based{" "}
+          <span className={`${colour}`}>Frontend Developer</span>
         </p>
       )}
 
       {size === 1 && (
         <summary>
-          {" "}
           <p>
-            <span className={`${colour}`}>
-              I'm a London based self-taught software developer
-            </span>{" "}
-            looking for my first graduate/junior role.
-          </p>{" "}
+            I am a London based{" "}
+            <span className={`${colour}`}>Frontend Developer</span>
+          </p>
           <p>
             {" "}
             I have specialised thus far in{" "}
@@ -98,13 +93,10 @@ function About({ colour }) {
       )}
       {size === 2 && (
         <summary>
-          {" "}
           <p>
-            <span className={`${colour}`}>
-              I'm a London based self-taught software developer
-            </span>{" "}
-            looking for my first graduate/junior role.
-          </p>{" "}
+            I am a London based{" "}
+            <span className={`${colour}`}>Frontend Developer</span>
+          </p>
           <p>
             {" "}
             I have specialised thus far in{" "}
@@ -122,13 +114,10 @@ function About({ colour }) {
       )}
       {size === 3 && (
         <summary>
-          {" "}
-          <p>
-            <span className={`${colour}`}>
-              I'm a London based self-taught software developer
-            </span>{" "}
-            looking for my first graduate/junior role.
-          </p>{" "}
+           <p>
+            I am a London based{" "}
+            <span className={`${colour}`}>Frontend Developer</span>
+          </p>
           <p>
             {" "}
             I have specialised thus far in{" "}
@@ -143,7 +132,7 @@ function About({ colour }) {
             <span className={`${colour}`}> career in web development</span>.
           </p>
           <p>
-            I currently work as a{" "}
+            I use to work as a{" "}
             <span className={`${colour}`}>Structural Engineer </span>and I have
             also started taking on freelance work for private clients that
             require <span className={`${colour}`}>fast bespoke websites.</span>
@@ -193,7 +182,7 @@ function About({ colour }) {
         </a>
       </p>
       <p>
-      Intermediate C# - <span className={`${colour}`}>Codecademy</span>{" "}
+        Intermediate C# - <span className={`${colour}`}>Codecademy</span>{" "}
         <a
           href="https://www.dropbox.com/s/c6wgh50bdbcbjxa/Samatar%20Xasan%20C%23%20Certificate.pdf?dl=0"
           target="_blank"
@@ -204,7 +193,7 @@ function About({ colour }) {
         </a>
       </p>
       <p>
-      Learn SQL Course - <span className={`${colour}`}>Codecademy</span>{" "}
+        Learn SQL Course - <span className={`${colour}`}>Codecademy</span>{" "}
         <a
           href="https://www.dropbox.com/s/eisc0t5dvy7m3bo/Samatar%20Xasan%20SQL%20Certificate.pdf?dl=0"
           target="_blank"

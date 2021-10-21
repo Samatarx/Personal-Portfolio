@@ -30,6 +30,12 @@
   text-align: center;
 }
 
+.image-link{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
 .project-card {
   position: relative;
   display: flex;
