@@ -159,6 +159,10 @@ section div.image-2 {
   margin-bottom: 20px;
 }
 
+.social-link:hover {
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   section {
     flex-direction: column;

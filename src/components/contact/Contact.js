@@ -148,21 +148,21 @@ const Contact = ({ colour, handleBackClick }) => {
             target="blank"
             aria-label="LinkedIn"
           >
-            <AiFillLinkedin className={`${colour}`} />
+            <AiFillLinkedin className={`${colour} social-link`} />
           </a>
           <a
             href="https://github.com/samatarx"
             target="blank"
             aria-label="Github"
           >
-            <AiFillGithub className={`${colour}`} />
+            <AiFillGithub className={`${colour} social-link`} />
           </a>
           <a
             href="https://twitter.com/samatarcodes"
             target="blank"
             aria-label="Twitter"
           >
-            <AiOutlineTwitter className={`${colour}`} />
+            <AiOutlineTwitter className={`${colour} social-link`} />
           </a>
         </div>
       </div>
