@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./about.css";
-import { AiOutlineLink } from "react-icons/ai";
+import Certificates from "./Certificates";
 
 function About({ colour }) {
   const [size, setSize] = useState(1);
@@ -142,67 +142,7 @@ function About({ colour }) {
 
       <h3 className="sub-heading">Education</h3>
       <h4>Certificates:</h4>
-      <p>
-        Responsive Web Design - FreeCodeCamp -{" "}
-        <span className={`${colour}`}>
-          Approximately 300 hours of coursework
-        </span>{" "}
-        <a
-          href="https://www.freecodecamp.org/certification/samatar/responsive-web-design"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Website Link"
-        >
-          <AiOutlineLink />
-        </a>
-      </p>
-      <p>
-        JavaScript Algorithms and Data Structures - FreeCodeCamp -{" "}
-        <span className={`${colour}`}>
-          Approximately 300 hours of coursework
-        </span>{" "}
-        <a
-          href="https://www.freecodecamp.org/certification/samatar/javascript-algorithms-and-data-structures"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Website Link"
-        >
-          <AiOutlineLink />
-        </a>
-      </p>
-      <p>
-        JavaScript Essentials - <span className={`${colour}`}>LinkedIn</span>{" "}
-        <a
-          href="https://www.dropbox.com/s/brqsuhnb1e0pwd8/CertificateOfCompletion_JavaScript%20Essential%20Training%20%281%29.pdf?dl=0"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Website Link"
-        >
-          <AiOutlineLink />
-        </a>
-      </p>
-      <p>
-        Intermediate C# - <span className={`${colour}`}>Codecademy</span>{" "}
-        <a
-          href="https://www.dropbox.com/s/c6wgh50bdbcbjxa/Samatar%20Xasan%20C%23%20Certificate.pdf?dl=0"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Website Link"
-        >
-          <AiOutlineLink />
-        </a>
-      </p>
-      <p>
-        Learn SQL Course - <span className={`${colour}`}>Codecademy</span>{" "}
-        <a
-          href="https://www.dropbox.com/s/eisc0t5dvy7m3bo/Samatar%20Xasan%20SQL%20Certificate.pdf?dl=0"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Website Link"
-        >
-          <AiOutlineLink />
-        </a>
-      </p>
+      <Certificates colour={colour}/>
       <h4>Bachelors:</h4>
       <p>
         City University London - BEng Civil Engineering -{" "}

@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   const [nav, setNav] = useState(true);
-  const [colour, setColour] = useState("yellow");
+  const [colour, setColour] = useState("green");
   const [count, setCount] = useState(0);
 
   const changeNav = (boolean) => {
@@ -40,11 +40,11 @@ function App() {
         setCount(1);
         break;
       case 1:
-        setColour("green");
+        setColour("yellow");
         setCount(2);
         break;
       default:
-        setColour("yellow");
+        setColour("green");
         setCount(0);
         break;
     }
