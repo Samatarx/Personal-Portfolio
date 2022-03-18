@@ -1,10 +1,6 @@
-import React from 'react'
-import certificateData from './certificateData'
+import React from 'react';
+import certificateData from './certificateData';
 import { AiOutlineLink } from "react-icons/ai";
-import { useState } from "react";
-
-
-
 
 const Certificates = ({colour}) => {
     // const [data] = useState(certificateData)
