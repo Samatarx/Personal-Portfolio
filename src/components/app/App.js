@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   const [nav, setNav] = useState(true);
-  const [colour, setColour] = useState("green");
+  const [colour, setColour] = useState("yellow");
   const [count, setCount] = useState(0);
 
   const changeNav = (boolean) => {
@@ -36,15 +36,15 @@ function App() {
   const logoSwitch = () => {
     switch (count) {
       case 0:
-        setColour("red");
+        setColour("green");
         setCount(1);
         break;
       case 1:
-        setColour("yellow");
+        setColour("red");
         setCount(2);
         break;
       default:
-        setColour("green");
+        setColour("yellow");
         setCount(0);
         break;
     }

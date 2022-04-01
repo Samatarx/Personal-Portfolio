@@ -143,6 +143,7 @@ const carouselData = [
     id: 22,
     title: "Sweet One",
     desc: "Online booking landing page for a small business",
+    site: "https://sweetoneldn.co.uk/",
     figma:
       "https://www.figma.com/file/b6EWwMReFt6ZDPIQbs3Xtk/Sweet-One-Landing-Page-Concept?node-id=0%3A1",
   },

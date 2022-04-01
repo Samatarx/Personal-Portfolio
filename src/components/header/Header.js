@@ -1,10 +1,12 @@
-import { AiOutlineDown, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import PDF from "../../images/Samatar_Xasan_Resume.pdf";
+import { AiOutlineDown } from "react-icons/ai";
+
 import { useSpring, animated } from "react-spring";
 import ParticleComp from "./ParticleComp";
 import { useState } from "react";
 import useInterval from "react-useinterval";
 import "./header.css";
+import Links from "./Links";
+import IconLinks from "./IconLink";
 
 const titles = ["Developer", "Engineer", "JavaScript", "React", "Polymath"];
 
@@ -47,55 +49,9 @@ function Header({ colour, handleBackClick, pageRefs, logoSwitch }) {
         <p className="strap-line">A Structural Engineer turned Web Developer</p>
         <p className={`${colour} title-roll`}>{item}</p>
         <div className="quick-links">
-          <div className="quick-page-list">
-            <span
-              className="quick-link"
-              onClick={() => {
-                handleBackClick("about");
-              }}
-            >
-              About
-            </span>
-            <span
-              className="quick-link"
-              onClick={() => {
-                handleBackClick("projects");
-              }}
-            >
-              Projects
-              <div className="underline"></div>
-            </span>
-            <span
-              className="quick-link"
-              onClick={() => {
-                handleBackClick("contact");
-              }}
-            >
-              Contact
-            </span>
-            <span className="quick-link">
-              <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-                Resume
-              </a>
-            </span>
-          </div>
+          <Links handleBackClick={handleBackClick} />
         </div>
-        <div className="quick-social">
-          <a
-            href="https://www.linkedin.com/in/samatarxasan/"
-            target="blank"
-            aria-label="LinkedIn"
-          >
-            <AiFillLinkedin className={`${colour} social-link`} />
-          </a>
-          <a
-            href="https://github.com/samatarx"
-            target="blank"
-            aria-label="Github"
-          >
-            <AiFillGithub className={`${colour} social-link`} />
-          </a>
-        </div>
+        <IconLinks colour={colour} />
       </animated.div>
       <div className="down-icon">
         <AiOutlineDown

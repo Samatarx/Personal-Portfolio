@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import PDF from "../../images/Samatar_Xasan_Resume.pdf";
+import IconLinks from "../header/IconLink";
 import "./contact.css";
 
 const Contact = ({ colour, handleBackClick }) => {
@@ -122,9 +122,7 @@ const Contact = ({ colour, handleBackClick }) => {
       <div className="resume">
         Click here for a copy of my CV{" "}
         <a href={PDF} target="_blank" rel="noreferrer" aria-label="CV">
-          <button className={`${colour}-bg download-btn`}>
-            DOWNLOAD
-          </button>
+          <button className={`${colour}-bg download-btn`}>DOWNLOAD</button>
         </a>
       </div>
       <div className="contact-socials">
@@ -142,32 +140,10 @@ const Contact = ({ colour, handleBackClick }) => {
             </a>
           </span>
         </p>
-        <div className="quick-social-contact">
-          <a
-            href="https://www.linkedin.com/in/samatarxasan/"
-            target="blank"
-            aria-label="LinkedIn"
-          >
-            <AiFillLinkedin className={`${colour} social-link`} />
-          </a>
-          <a
-            href="https://github.com/samatarx"
-            target="blank"
-            aria-label="Github"
-          >
-            <AiFillGithub className={`${colour} social-link`} />
-          </a>
-          <a
-            href="https://twitter.com/samatarcodes"
-            target="blank"
-            aria-label="Twitter"
-          >
-            <AiOutlineTwitter className={`${colour} social-link`} />
-          </a>
-        </div>
+        <IconLinks colour={colour} phase={1} />
       </div>
       <p className="footer">
-        Designed and Developed by {" "}
+        Designed and Developed by{" "}
         <span
           onClick={() => {
             handleBackClick("home");

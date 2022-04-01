@@ -68,6 +68,7 @@ input:focus::placeholder {
 }
 
 .contact-btn {
+  color: #000;
   border: 1px solid var(--main-theme);
   outline: none;
   width: 75px;
@@ -83,6 +84,7 @@ input:focus::placeholder {
 }
 
 .download-btn {
+  color: #000;
   margin-top: 10px;
   width: 150px;
   border: 1px solid var(--main-theme);

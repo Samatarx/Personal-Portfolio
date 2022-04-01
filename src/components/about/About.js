@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./about.css";
 import Certificates from "./Certificates";
+import Degree from "./Degree";
 
 function About({ colour }) {
   const [size, setSize] = useState(1);
@@ -114,7 +115,7 @@ function About({ colour }) {
       )}
       {size === 3 && (
         <summary>
-           <p>
+          <p>
             I am a London based{" "}
             <span className={`${colour}`}>Frontend Developer</span>
           </p>
@@ -141,18 +142,8 @@ function About({ colour }) {
       )}
 
       <h3 className="sub-heading">Education</h3>
-      <h4>Certificates:</h4>
-      <Certificates colour={colour}/>
-      <h4>Bachelors:</h4>
-      <p>
-        City University London - BEng Civil Engineering -{" "}
-        <span className={`${colour}`}> 1st Class Honours Degree</span>
-      </p>
-      <h4>Masters:</h4>
-      <p>
-        City University London - MSc Civil Engineering Structures -{" "}
-        <span className={`${colour}`}> Distinction</span>
-      </p>
+      <Certificates colour={colour} />
+      <Degree colour={colour} />
     </summary>
   );
 }

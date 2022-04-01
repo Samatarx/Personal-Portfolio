@@ -65,7 +65,8 @@ const Project = ({
         </div>
         {show && (
           <div className="card-content">
-            <a className="image-link"
+            <a
+              className="image-link"
               href={url}
               target="_blank"
               rel="noreferrer"
