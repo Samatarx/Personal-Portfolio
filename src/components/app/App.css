@@ -5,7 +5,7 @@
   --yellow-theme: #fdca7f;
   --green-theme: #96ff81;
   --red-theme: #ffa3a3;
-  --max-width: 2000px;
+  --max-width: 3000px;
   --spacing: 0.1rem;
 }
 
@@ -53,7 +53,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-
   line-height: 1.25;
   margin-bottom: 0.75rem;
   color: #fff;
@@ -121,7 +120,7 @@ p {
 /*  Global Classes */
 
 .App {
-  max-width: 2000px;
+  max-width: 2500px;
   margin: auto;
 }
 

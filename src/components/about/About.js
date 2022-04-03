@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./about.css";
 import Certificates from "./Certificates";
 import Degree from "./Degree";
+import Bio from "./Bio"
 
 function About({ colour }) {
   const [size, setSize] = useState(1);
@@ -51,19 +52,6 @@ function About({ colour }) {
             />
             <label htmlFor="medium">.</label>
           </div>
-          <div className="radio-div">
-            <input
-              className={` ${colour}-radio radio-btn`}
-              type="radio"
-              name="long"
-              id="long"
-              checked={size === 3}
-              onChange={() => {
-                setSize(3);
-              }}
-            />
-            <label htmlFor="long">.</label>
-          </div>
         </div>
         <div className="labels">
           <p className="thin-para">Short</p>
@@ -71,75 +59,7 @@ function About({ colour }) {
         </div>
       </section>
 
-      {size === 0 && (
-        <p>
-          I am a London based{" "}
-          <span className={`${colour}`}>Frontend Developer</span>
-        </p>
-      )}
-
-      {size === 1 && (
-        <summary>
-          <p>
-            I am a London based{" "}
-            <span className={`${colour}`}>Frontend Developer</span>
-          </p>
-          <p>
-            {" "}
-            I have specialised thus far in{" "}
-            <span className={`${colour}`}> front end technologies</span> and I
-            am currently learning backend engineering.
-          </p>
-        </summary>
-      )}
-      {size === 2 && (
-        <summary>
-          <p>
-            I am a London based{" "}
-            <span className={`${colour}`}>Frontend Developer</span>
-          </p>
-          <p>
-            {" "}
-            I have specialised thus far in{" "}
-            <span className={`${colour}`}> front end technologies</span> and I
-            am currently learning backend engineering.
-          </p>
-          <p>
-            I started<span className={`${colour}`}> learning </span>how to code
-            on the 10<sup>th</sup> of July 2020 at the start of the pandemic,
-            initially as a hobby. I've enjoyed it so much that I have decided to
-            pursue a
-            <span className={`${colour}`}> career in web development</span>.
-          </p>
-        </summary>
-      )}
-      {size === 3 && (
-        <summary>
-          <p>
-            I am a London based{" "}
-            <span className={`${colour}`}>Frontend Developer</span>
-          </p>
-          <p>
-            {" "}
-            I have specialised thus far in{" "}
-            <span className={`${colour}`}> front end technologies</span> like
-            React and I am currently learning backend engineering.
-          </p>
-          <p>
-            I started<span className={`${colour}`}> learning </span>how to code
-            on the 10<sup>th</sup> of July 2020 at the start of the pandemic,
-            initially as a hobby. I've enjoyed it so much that I have decided to
-            pursue a
-            <span className={`${colour}`}> career in web development</span>.
-          </p>
-          <p>
-            I use to work as a{" "}
-            <span className={`${colour}`}>Structural Engineer </span>and I have
-            also started taking on freelance work for private clients that
-            require <span className={`${colour}`}>fast bespoke websites.</span>
-          </p>
-        </summary>
-      )}
+      <Bio colour={colour} size={size}/>
 
       <h3 className="sub-heading">Education</h3>
       <Certificates colour={colour} />
