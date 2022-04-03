@@ -33,10 +33,10 @@ const cardData = [
     id: "2",
     name: "Sneaker Drop",
     image: renderImage(jordans),
-    url: "https://www.sneaker-drop.xyz/",
+    url: "https://sneaker-drop.netlify.app/",
     github: "https://github.com/Samatarx/Sneaker-Launch",
     tech: ["HTML", "CSS", "JS", "Bootstrap", "React", "AWS"],
-    desc: "I built a sneaker launch website to demonstrate my ability to use React, React-Router and Bootstrap. I have previously used react-router in tutorials and I wanted to try it myself and put my own spin on it. The project is hosted on AWS, using the AWS Amplify feature.",
+    desc: "I built a sneaker launch website to demonstrate my ability to use React, React-Router and Bootstrap. I have previously used react-router in tutorials and I wanted to try it myself and put my own spin on it. The project was intially hosted on AWS, using the AWS Amplify feature. It is now hosted on Netlify",
   },
   {
     id: "3",
