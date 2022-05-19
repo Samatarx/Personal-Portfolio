@@ -1,6 +1,6 @@
 import PDF from "../../images/Samatar_Xasan_Resume.pdf";
 
-const linkArray = ["About", "Project", "Contact", "Resume"];
+const linkArray = ["About", "Projects", "Contact", "Resume"];
 
 function Links({ handleBackClick }) {
   return (
