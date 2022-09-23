@@ -6,15 +6,14 @@ const bioData = [
   },
   {
     info: "I am a London based",
-    span: "Frontend Developer",
+    span: "Software Engineer",
     info2: "who uses Angular for work and React in my free time.",
   },
   {
     info: "I help startups build their UIs using JavaScript frameworks",
     span: "like React or Angular.",
     info2: "I am self-taught developer and I am always looking to further develop my skills.",
-    span2: "Started learning how to code in July 2020 as a hobby,",
-    info3: "now it's my career 💪",
+    span2: "Started learning how to code in July 2020 as a hobby."
   },
 ];
 

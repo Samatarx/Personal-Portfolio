@@ -8,7 +8,7 @@ import "./header.css";
 import Links from "./Links";
 import IconLinks from "./IconLink";
 
-const titles = ["Developer", "Engineer", "JavaScript", "React", "Polymath"];
+const titles = ["Developer", "Engineer", "JavaScript", "React", "Polymath", "Angular", "TypeScript"];
 
 function Header({ colour, handleBackClick, pageRefs, logoSwitch }) {
   const props = useSpring({

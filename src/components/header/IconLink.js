@@ -1,4 +1,4 @@
-import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const iconArray = [
   {
@@ -10,12 +10,7 @@ const iconArray = [
     href: "https://github.com/samatarx",
     aria: "Github",
     icon: AiFillGithub,
-  },
-  {
-    href: "https://twitter.com/samatarcodes",
-    aria: "Twitter",
-    icon: AiOutlineTwitter,
-  },
+  }
 ];
 
 function IconLinks({ colour, phase }) {

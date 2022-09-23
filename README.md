@@ -66,7 +66,7 @@ I learnt how to use several new animation libraries to bring my vision to life. 
 
 - Implemented the use of React hooks throughout the project
 - Utilised useEffect to close the navigation automatically after 15 seconds
-- Was able to reduce the size of components by mapping through data exported from an addtional JS file 
+- Was able to reduce the size of components by mapping through data exported from an addtional JS file
 - Leveraged external libraries to create the form and animation effects for the site
 - Used useRef to navigate through the site seemlessly
 
@@ -112,8 +112,6 @@ I used Hotjar to monitor where users on my website were clicking.
 <!-- CONTACT -->
 
 ## Contact
-
-Samatar Xasan - [@samatarcodes](https://twitter.com/samatarcodes)
 
 Project Link: [samatar.co](https://samatar.co)
 
